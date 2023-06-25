@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>个人错误大全和笔记 | 罗小黑🥝</title><meta name="keywords" content="踩坑记录"><meta name="author" content="罗小黑🥝"><meta name="copyright" content="罗小黑🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="作为目前最受欢迎的NoSQL，Redis有他的独特之处，并且Redis作为在内存层次的数据库，他的快速和处理相对MySQL来说具有很大的优势，但是其与MySQL各有优势。">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>云服务器部署的踩坑和前端vue的学习和安装 | 罗小黑🥝</title><meta name="keywords" content="踩坑记录"><meta name="author" content="罗小黑🥝"><meta name="copyright" content="罗小黑🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="作为目前最受欢迎的NoSQL，Redis有他的独特之处，并且Redis作为在内存层次的数据库，他的快速和处理相对MySQL来说具有很大的优势，但是其与MySQL各有优势。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="个人错误大全和笔记">
+<meta property="og:title" content="云服务器部署的踩坑和前端vue的学习和安装">
 <meta property="og:url" content="https://luoxiaohei520.github.io/posts/c0b97cce.html">
 <meta property="og:site_name" content="罗小黑🥝">
 <meta property="og:description" content="作为目前最受欢迎的NoSQL，Redis有他的独特之处，并且Redis作为在内存层次的数据库，他的快速和处理相对MySQL来说具有很大的优势，但是其与MySQL各有优势。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y8o2xg.jpg">
+<meta property="og:image" content="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqw9yx.jpg">
 <meta property="article:published_time" content="2023-06-21T12:27:11.688Z">
-<meta property="article:modified_time" content="2023-04-21T06:57:46.857Z">
+<meta property="article:modified_time" content="2023-06-25T02:26:43.221Z">
 <meta property="article:author" content="罗小黑🥝">
 <meta property="article:tag" content="踩坑记录">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y8o2xg.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://luoxiaohei520.github.io/posts/c0b97cce"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqw9yx.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://luoxiaohei520.github.io/posts/c0b97cce"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -48,12 +48,12 @@
   islazyload: true,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '个人错误大全和笔记',
+  title: '云服务器部署的踩坑和前端vue的学习和安装',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-04-21 14:57:46'
+  postUpdate: '2023-06-25 10:26:43'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -146,201 +146,106 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="/css/aplayer.css"><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="罗小黑🥝" type="application/atom+xml">
-</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/10/wallhaven-pkmeo3.th.jpg" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">罗小黑🥝</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">个人错误大全和笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><svg class="meta_icon post-meta-icon" style="width:30px;height:30px;position:relative;top:10px"><use xlink:href="#icon-rili"></use></svg><span class="post-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2023-06-21T12:27:11.688Z" title="发表于 2023-06-21 20:27:11">2023-06-21</time><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-gengxin1"></use></svg><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-21T06:57:46.857Z" title="更新于 2023-04-21 14:57:46">2023-04-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-biaoqian"></use></svg><a class="post-meta-categories" href="/categories/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:8px"><use xlink:href="#icon-charuword"></use></svg><span class="post-meta-label">字数总计:</span><span class="word-count">8855</span><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:20px;height:20px;position:relative;top:5px"><use xlink:href="#icon-shizhong"></use></svg><span class="post-meta-label">阅读时长:</span><span>36分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="个人错误大全和笔记"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:5px"><use xlink:href="#icon-eye"></use></svg><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>每天都在进步，哪怕是一点点。</h1>
-<h1>Vue安装和学习</h1>
-<p><code>npm install</code></p>
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="/css/aplayer.css"><script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="罗小黑🥝" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/10/wallhaven-pkmeo3.th.jpg" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">罗小黑🥝</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">云服务器部署的踩坑和前端vue的学习和安装</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><svg class="meta_icon post-meta-icon" style="width:30px;height:30px;position:relative;top:10px"><use xlink:href="#icon-rili"></use></svg><span class="post-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2023-06-21T12:27:11.688Z" title="发表于 2023-06-21 20:27:11">2023-06-21</time><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-gengxin1"></use></svg><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-25T02:26:43.221Z" title="更新于 2023-06-25 10:26:43">2023-06-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-biaoqian"></use></svg><a class="post-meta-categories" href="/categories/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/">错误记录</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:8px"><use xlink:href="#icon-charuword"></use></svg><span class="post-meta-label">字数总计:</span><span class="word-count">8824</span><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:20px;height:20px;position:relative;top:5px"><use xlink:href="#icon-shizhong"></use></svg><span class="post-meta-label">阅读时长:</span><span>36分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="云服务器部署的踩坑和前端vue的学习和安装"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:5px"><use xlink:href="#icon-eye"></use></svg><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="每天都在进步，哪怕是一点点。"><a href="#每天都在进步，哪怕是一点点。" class="headerlink" title="每天都在进步，哪怕是一点点。"></a>每天都在进步，哪怕是一点点。</h1><h1 id="Vue安装和学习"><a href="#Vue安装和学习" class="headerlink" title="Vue安装和学习"></a>Vue安装和学习</h1><p><code>npm install</code></p>
 <p><code>npm run  dev</code></p>
-<h2 id="克隆项目">克隆项目</h2>
-<p>git clone <a target="_blank" rel="noopener" href="https://github.com/daxiongYang/renren-fast-vue.git">https://github.com/daxiongYang/renren-fast-vue.git</a></p>
-<h2 id="安装依赖">安装依赖</h2>
-<ol>
-<li>
-<p>npm install -g cnpm --registry=https://registry.npm.taobao.org</p>
+<h2 id="克隆项目"><a href="#克隆项目" class="headerlink" title="克隆项目"></a>克隆项目</h2><p>git clone <a target="_blank" rel="noopener" href="https://github.com/daxiongYang/renren-fast-vue.git">https://github.com/daxiongYang/renren-fast-vue.git</a></p>
+<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><ol>
+<li><p>npm install -g cnpm —registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org">https://registry.npm.taobao.org</a></p>
 </li>
-<li>
-<p>cnpm install</p>
+<li><p>cnpm install</p>
 </li>
 </ol>
-<h2 id="启动服务">启动服务</h2>
-<p>npm run dev</p>
+<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><p>npm run dev</p>
 <hr>
-<p>项目配置  ：  1 链接数据库  开启虚拟机<br>
-2 开启nocas<br>
-3 开启 vue 后端管理界面 npm run dev<br>
-4</p>
-<p>vue 前端登录  admin admin</p>
-<p>nacos  登录  nacos  nacos</p>
-<h2 id="Vue卸载">Vue卸载</h2>
-<blockquote>
-<p>官方解释<br>
-关于旧版本</p>
+<p>项目配置  ：  1 链接数据库  开启虚拟机<br>               2 开启nocas<br>               3 开启 vue 后端管理界面 npm run dev<br>               4</p>
+<p>vue 前端登录  admin admin </p>
+<p>nacos  登录  nacos  nacos  </p>
+<h2 id="Vue卸载"><a href="#Vue卸载" class="headerlink" title="Vue卸载"></a>Vue卸载</h2><blockquote>
+<p>官方解释<br>关于旧版本</p>
 <p>Vue CLI 的包名称由 vue-cli 改成了 @vue/cli。 如果你已经全局安装了旧版本的 vue-cli (1.x 或 2.x)，你需要先通过 npm uninstall vue-cli -g 或 yarn global remove vue-cli 卸载它。</p>
 <p>这是vue-cli 3.0版本的卸载</p>
 <p>小编之前没注意 每次卸载 不知道怎么回事老是卸载不了，因为小编一开始就安装的最新版本，几乎都是4.xx的</p>
 <p>后来各种百度 终于知道了</p>
-<p><a target="_blank" rel="noopener" href="//xn--3-zx8au75p.xn--0-bs6a41kww2ajwm24f">//卸载3.0之前的版本</a><br>
-<code>npm uninstall -g vue-cli</code><br>
-<code>yarn global remove vue-cli</code></p>
-<p><a target="_blank" rel="noopener" href="//xn--3-zx8au75p.xn--0-bs6a77pl5wjwm24f">//卸载3.0之后的版本</a>（可以统一使用此指令卸载）<br>
-<code>npm uninstall -g @vue/cli</code><br>
-<code>yarn global remove @vue/cli</code></p>
-<p>安装<br>
-然后是安装，小编是看教程在学习 之前没注意版本号，各种对不上教程。终于注意到了 教程是3.3.0 也是各种百度 怎么都安装不上<br>
-之前百度到这个：</p>
-<p><a target="_blank" rel="noopener" href="//xn--2-zb2b494k.9.xn--6-856b314a">//安装2.9.6版本</a><br>
-npm install -g vue-cli@2.9.6<br>
-yarn global add vue-cli</p>
+<p>//卸载3.0之前的版本<br><code>npm uninstall -g vue-cli</code><br><code>yarn global remove vue-cli</code></p>
+<p>//卸载3.0之后的版本（可以统一使用此指令卸载）<br><code>npm uninstall -g @vue/cli</code><br><code>yarn global remove @vue/cli</code></p>
+<p>安装<br>然后是安装，小编是看教程在学习 之前没注意版本号，各种对不上教程。终于注意到了 教程是3.3.0 也是各种百度 怎么都安装不上<br>之前百度到这个：</p>
+<p>//安装2.9.6版本<br>npm install -g vue-cli@2.9.6<br>yarn global add vue-cli</p>
 </blockquote>
 <p>Vue模块化开发:</p>
 <ol>
-<li>
-<pre><code class="language-vue">npm install webpack -g
+<li><p>```vue<br>npm install webpack -g</p>
 <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    全局安装</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. ```</span><br><span class="line">   npm install -g @vue/cli-init</span><br></pre></td></tr></table></figure>
-
-全局安装vue脚手架
-
-</code></pre>
+<p>全局安装vue脚手架</p>
 </li>
-<li>
-<p>初始化vue项目</p>
+<li><p>初始化vue项目</p>
 <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack appname : <span class="type">vue</span> 脚手架使用webpack模块初始化一个appname(自己定义的)项目</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p><code>cd vue-demo</code></p>
+<li><p><code>cd vue-demo</code></p>
 </li>
-<li>
-<p><code>npm run dev </code></p>
+<li><p><code>npm run dev</code></p>
 </li>
 </ol>
-<h2 id="vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用">vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用</h2>
-<blockquote>
+<h2 id="vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用"><a href="#vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用" class="headerlink" title="vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用"></a>vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用</h2><blockquote>
 <p>npm  i element-ui -s</p>
 </blockquote>
 <p>然后main.js导入</p>
-<p><code>import ElementUI from 'element-ui'</code>   //导入vue前端Element框架</p>
-<p><code>import 'element-ui/lib/theme-chalk/index.css';</code></p>
-<p>Vue.use(ElementUI);</p>
+<p><code>import ElementUI from &#39;element-ui&#39;</code>   //导入vue前端Element框架</p>
+<p><code>import &#39;element-ui/lib/theme-chalk/index.css&#39;;</code></p>
+<p>Vue.use(ElementUI); </p>
 <p><code>alt + shift + f自动对齐（VSCode）</code></p>
-<h1>Docker安装和相关配置</h1>
-<p>在安装docker之前我们需要准备yum工具</p>
+<h1 id="Docker安装和相关配置"><a href="#Docker安装和相关配置" class="headerlink" title="Docker安装和相关配置"></a>Docker安装和相关配置</h1><p>在安装docker之前我们需要准备yum工具</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install -y yum-utils \</span><br><span class="line">           device-mapper-persistent-data \</span><br><span class="line">           lvm2 --skip-broken</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>更新本地镜像源</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置docker镜像源</span></span><br><span class="line">yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line">sed -i &#x27;s/download.docker.com/mirrors.aliyun.com\/docker-ce/g&#x27; /etc/yum.repos.d/docker-ce.repo</span><br><span class="line"></span><br><span class="line">yum makecache fast</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置docker镜像源</span></span><br><span class="line">yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.reposed -i &#x27;s/download.docker.com/mirrors.aliyun.com\/docker-ce/g&#x27; /etc/yum.repos.d/docker-ce.repo</span><br><span class="line"></span><br><span class="line">yum makecache fast</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>之后输入安装docker命令</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install -y docker-ce</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>关闭防火墙</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">关闭</span></span><br><span class="line">systemctl stop firewalld</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">禁止开机启动防火墙</span></span><br><span class="line">systemctl disable firewalld</span><br></pre></td></tr></table></figure>
 <p>通过命令启动docker</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker  # 启动docker服务</span><br><span class="line"></span><br><span class="line">systemctl stop docker  # 停止docker服务</span><br><span class="line"></span><br><span class="line">systemctl restart docker  # 重启docker服务</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="配置镜像加速">配置镜像加速</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器</span><br><span class="line"></span><br><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#x27;EOF&#x27;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://vwesipli.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="配置镜像加速"><a href="#配置镜像加速" class="headerlink" title="配置镜像加速"></a>配置镜像加速</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器</span><br><span class="line"></span><br><span class="line">sudo mkdir -p /etc/docker</span><br><span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#x27;EOF&#x27;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://vwesipli.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>s</p>
 <blockquote>
-<p>docker -v  --查看docker版本<br>
-docker images --查看当前docker运行<br>
-sudo systemctl start docker --启动docker 在虚拟机里边<br>
-docker images  --有时候权限不足   我们变为  sudo  docker images 检查我们虚拟机里边有无下载镜像<br>
-sudo systemctl enable docker      --设置开机自启动<br>
-docker 配置镜像加速<br>
-1		sudo mkdir -p /etc/docker<br>
-2		sudo tee /etc/docker/daemon.json &lt;&lt;-‘EOF’<br>
-{<br>
-“registry-mirrors”: [“<a target="_blank" rel="noopener" href="https://dcyzi7af.mirror.aliyuncs.com">https://dcyzi7af.mirror.aliyuncs.com</a>”]<br>
-}<br>
-EOF<br>
-3		sudo systemctl daemon-reload<br>
-4		sudo systemctl restart docker</p>
-<p>docker指令安装mysql<br>
-1	sudo docker pull mysql  --安装最新的mysql<br>
-2	sudo docker pull mysql:版本号   我使用的是 mysql 8.0.2 --安装指定的版本号</p>
-<h3 id="启动安装的镜像">启动安装的镜像</h3>
-<p>比如启动 mysql:<br>
-docker run -p 3306:3306 --name mysql <br>
--v /mydata/mysql/log:/var/log/mysql <br>
--v /mydata/mysql/data:/var/lib/mysql <br>
--v /mydata/mysql/conf:/etc/mysql <br>
--e MYSQL_ROOT_PASSWORD=a <br>
--d mysql:5.7</p>
+<p>docker -v  —查看docker版本<br>docker images —查看当前docker运行<br>sudo systemctl start docker —启动docker 在虚拟机里边<br>docker images  —有时候权限不足   我们变为  sudo  docker images 检查我们虚拟机里边有无下载镜像<br>sudo systemctl enable docker      —设置开机自启动<br>docker 配置镜像加速<br>1        sudo mkdir -p /etc/docker<br>2        sudo tee /etc/docker/daemon.json &lt;&lt;-‘EOF’<br>        {<br>        “registry-mirrors”: [“<a target="_blank" rel="noopener" href="https://dcyzi7af.mirror.aliyuncs.com">https://dcyzi7af.mirror.aliyuncs.com</a>“]<br>        }<br>        EOF<br>3        sudo systemctl daemon-reload<br>4        sudo systemctl restart docker</p>
+<p>docker指令安装mysql<br>1    sudo docker pull mysql  —安装最新的mysql<br>2    sudo docker pull mysql:版本号   我使用的是 mysql 8.0.2 —安装指定的版本号</p>
+<h3 id="启动安装的镜像"><a href="#启动安装的镜像" class="headerlink" title="启动安装的镜像"></a>启动安装的镜像</h3><p>比如启动 mysql:<br>docker run -p 3306:3306 —name mysql \<br> -v /mydata/mysql/log:/var/log/mysql \<br> -v /mydata/mysql/data:/var/lib/mysql \<br> -v /mydata/mysql/conf:/etc/mysql \<br> -e MYSQL_ROOT_PASSWORD=a \<br> -d mysql:5.7</p>
 </blockquote>
 <p>运行mysql:</p>
 <blockquote>
-<p>docker run -p 3306:3306 --name mysql \</p>
-<h2 id="v-mydata-mysql-log-var-log-mysql-v-mydata-mysql-data-var-lib-mysql-v-mydata-mysql-conf-etc-mysql-e-MYSQL-ROOT-PASSWORD-a-d-mysql-5-7">-v /mydata/mysql/log:/var/log/mysql <br>
--v /mydata/mysql/data:/var/lib/mysql \<br>
--v /mydata/mysql/conf:/etc/mysql \<br>
--e MYSQL_ROOT_PASSWORD=a \<br>
--d mysql:5.7</h2>
-<h2 id="上边是mysql5-7的启动方式-d-代表以后台方式运行-p-3306-3306-将容器的3306端口映射到主机的3306">上边是mysql5.7的启动方式<br>
--d 代表以后台方式运行<br>
--p 3306:3306 将容器的3306端口映射到主机的3306</h2>
-<pre><code>  -p 3306：3306； 将容器的3306端口映射到主机的3306端口
-  -v/mydata/mysgl/conf:/etc/mysgl  ：将配置文件夫挂载到主机
-  -v/mydata/mysgl/log:/var/log/mysgl  ：将日志文件夹挂载到主机
-  -w/mydata/mysgl/data:/var/lib/mysgl/  ，将配置文件夹挂载到主机
-  -e MYSQL_ROOT_PASSWORD=root           ：初始化root用户的密码
-</code></pre>
-<hr>
-<p>有时候切换权限麻烦 所有我们切换到<br>
-su root   --权限最高<br>
-docker ps --查看当前docker正在运行中的程序</p>
-<p>docker run -dit -p 3306:3306 mysql:8.0.2 bash  --启动mysql 8.0.2</p>
-<p>service mysql status     --查看mysql的状态<br>
-service mysql start      --启动mys</p>
-<p>docker exec -it mysql /bin/bash  --进入mysql内部</p>
-<p>whereis mysql<br>
-mysql: /usr/bin/mysql /usr/lib64/mysql /usr/share/mysql  /usr/share/man/man1/mysql.1.gz</p>
+<p> docker run -p 3306:3306 —name mysql \</p>
+<p>  -v /mydata/mysql/log:/var/log/mysql \<br>  -v /mydata/mysql/data:/var/lib/mysql \<br>  -v /mydata/mysql/conf:/etc/mysql \<br>  -e MYSQL_ROOT_PASSWORD=a \ </p>
+<h2 id="d-mysql-5-7"><a href="#d-mysql-5-7" class="headerlink" title="  -d mysql:5.7"></a>  -d mysql:5.7</h2><pre><code>上边是mysql5.7的启动方式
+-d 代表以后台方式运行
+</code></pre><h2 id="p-3306-3306-将容器的3306端口映射到主机的3306"><a href="#p-3306-3306-将容器的3306端口映射到主机的3306" class="headerlink" title="-p 3306:3306 将容器的3306端口映射到主机的3306"></a>-p 3306:3306 将容器的3306端口映射到主机的3306</h2><pre><code>    -p 3306：3306； 将容器的3306端口映射到主机的3306端口
+    -v/mydata/mysgl/conf:/etc/mysgl  ：将配置文件夫挂载到主机
+    -v/mydata/mysgl/log:/var/log/mysgl  ：将日志文件夹挂载到主机
+    -w/mydata/mysgl/data:/var/lib/mysgl/  ，将配置文件夹挂载到主机
+    -e MYSQL_ROOT_PASSWORD=root           ：初始化root用户的密码
+</code></pre><hr>
+<p> 有时候切换权限麻烦 所有我们切换到<br> su root   —权限最高<br> docker ps —查看当前docker正在运行中的程序</p>
+<p> docker run -dit -p 3306:3306 mysql:8.0.2 bash  —启动mysql 8.0.2</p>
+<p> service mysql status     —查看mysql的状态<br> service mysql start      —启动mys</p>
+<p> docker exec -it mysql /bin/bash  —进入mysql内部</p>
+<p> whereis mysql<br>        mysql: /usr/bin/mysql /usr/lib64/mysql /usr/share/mysql  /usr/share/man/man1/mysql.1.gz</p>
 <hr>
 </blockquote>
 <p>docoker指令</p>
 <blockquote>
-<p>一、查看容器，复制容器id 即container id	  	<br>
-docker ps -a<br>
-二、停止容器<br>
-docker stop 你的容器id<br>
-三、删除容器<br>
-docker rm 容器id<br>
-四、查看镜像，复制镜像id即images id<br>
-docker images<br>
-五。删除镜像</p>
+<p>一、查看容器，复制容器id 即container id<br>docker ps -a<br>二、停止容器<br>docker stop 你的容器id<br>三、删除容器<br>docker rm 容器id<br>四、查看镜像，复制镜像id即images id<br>docker images<br>五。删除镜像</p>
 <p>docker rmi 镜像id</p>
-</blockquote>
-<blockquote>
-<p>这是我装的<br>
-Mysql8.0安装</p>
-</blockquote>
-<blockquote>
+<p>这是我装的<br>Mysql8.0安装</p>
 <p>1、拉取mysql镜像</p>
 <p>docker pull mysql:8.0</p>
-</blockquote>
-<blockquote>
-<p>2.docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</p>
-<p>docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=a -d mysql</p>
-</blockquote>
-<blockquote>
+<p>2.docker run -p 3306:3306 —name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</p>
+<p>docker run -p 3306:3306 —name mysql -e MYSQL_ROOT_PASSWORD=a -d mysql</p>
 <p>3.docker exec -it mysql /bin/bash</p>
-</blockquote>
-<blockquote>
 <p>4.mysql -uroot -p123456</p>
-</blockquote>
-<blockquote>
 <p>5.use mysql;</p>
-</blockquote>
-<blockquote>
-<p>6.ALTER USER ‘root’@‘%’ IDENTIFIED BY ‘123456’ PASSWORD EXPIRE NEVER;</p>
-</blockquote>
-<blockquote>
-<p>7.ALTER USER ‘root’@‘%’ IDENTIFIED WITH mysql_native_password BY ‘123456’;</p>
-</blockquote>
-<blockquote>
+<p>6.ALTER USER ‘root’@’%’ IDENTIFIED BY ‘123456’ PASSWORD EXPIRE NEVER;</p>
+<p>7.ALTER USER ‘root’@’%’ IDENTIFIED WITH mysql_native_password BY ‘123456’;</p>
 <p>8.FLUSH PRIVILEGES;</p>
-</blockquote>
-<blockquote>
-<p>9.修改密码<br>
-mysqladmin -uroot -p旧密码 password 新密码   --密码为 123456<br>
-注意一下我装的虚拟机端口号mysql为 3307</p>
-</blockquote>
-<blockquote>
+<p>9.修改密码<br>mysqladmin -uroot -p旧密码 password 新密码   —密码为 123456<br>注意一下我装的虚拟机端口号mysql为 3307</p>
 <p>29adbe537c3e   mysql     “docker-entrypoint.s…”   52 minutes ago   Up 52 minutes   33060/tcp, 0.0.0.0:3307-&gt;3306/tcp, :::3307-&gt;3306/tcp   mysql</p>
 <hr>
 <p>首先进入</p>
@@ -354,73 +259,38 @@ mysqladmin -uroot -p旧密码 password 新密码   --密码为 123456<br>
 <p>mysql  Ver 8.0.11 for Linux on x86_64 (MySQL Community Server - GPL)</p>
 <p>2,进行授权远程连接(注意mysql 8.0跟之前的授权方式不同)</p>
 <p>授权</p>
-<p>GRANT ALL ON <em>.</em> TO ‘root’@‘%’;</p>
+<p>GRANT ALL ON <em>.</em> TO ‘root’@’%’;</p>
 <p>刷新权限</p>
 <p>flush privileges;</p>
 <p>此时,还不能远程访问,因为Navicat只支持旧版本的加密,需要更改mysql的加密规则</p>
 <p>3,更改加密规则</p>
-<p>ALTER USER ‘root’@‘localhost’ IDENTIFIED BY ‘a’ PASSWORD EXPIRE NEVER;</p>
+<p>ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘a’ PASSWORD EXPIRE NEVER;</p>
 <p>4,更新root用户密码</p>
-<p>ALTER USER ‘root’@‘%’ IDENTIFIED WITH mysql_native_password BY ‘a’;</p>
+<p>ALTER USER ‘root’@’%’ IDENTIFIED WITH mysql_native_password BY ‘a’;</p>
 <p>刷新权限</p>
 <p>flush privileges;</p>
 <p>OK，设置完成，再次使用 Navicat 连接数据库</p>
 </blockquote>
-<h3 id="下载redis">下载redis</h3>
-<p><code>docker pull redis</code></p>
-<p>创建实例并启动<br>
-<code>mkdir -p /mydata/redis/conf     </code></p>
+<h3 id="下载redis"><a href="#下载redis" class="headerlink" title="下载redis"></a>下载redis</h3><p><code>docker pull redis</code></p>
+<p>创建实例并启动<br><code>mkdir -p /mydata/redis/conf</code> </p>
 <p><code>touch redis.conf</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 6379:6379 --name redis -v /mydata/redis/data:/data \</span><br><span class="line"></span><br><span class="line">   -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \</span><br><span class="line"></span><br><span class="line">   -d redis redis-server /etc/redis/redis.conf</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>ls   查看当前文件夹下的文件<br>
-<code> cat redis.conf</code></p>
-<p>测试redis</p>
-<p><code>docker exec -it redis redis-cli</code></p>
+<p> ls   查看当前文件夹下的文件<br><code>cat redis.conf</code></p>
+<p> 测试redis </p>
+<p> <code>docker exec -it redis redis-cli</code></p>
 <hr>
-<p>由于以前的数据全存在内存中，从而我们重复读取get a的时候会导致失败<br>
-[root@localhost conf]# <code>cat redis.conf</code><br>
-[root@localhost conf]# <code>docker exec -it redis redis-cli</code><br>
-127.0.0.1:6379&gt;<code> set a b</code><br>
-OK<br>
-127.0.0.1:6379&gt; <code>get a</code><br>
-“b”   //从而在一次上来的时候这块是null<br>
-127.0.0.1:6379&gt; exit</p>
-<p>–让redis 持久化  —&gt; pwd<br>
-127.0.0.1:6379&gt; exit<br>
-[root@localhost conf]# <code>pwd</code><br>
-/mydata/redis/conf<br>
-[root@localhost conf]# <code>ls</code><br>
-redis.conf<br>
-[root@localhost conf]# <code>vi redis.conf </code><br>
-按  <code>i</code><br>
-输入<code>appendonly yes</code><br>
-按<code>esc</code>  输入<code>:wq</code></p>
-<p><code>docker restart redis  //重启redis</code><br>
-–设置开机自启动docker 里边容器<br>
-<code>sudo docker update &lt;容器名&gt; --restart=always</code></p>
-<h1>Linux指令</h1>
-<p>whoami  --谁的账号</p>
-<p>ls /    ----查看的当前运行的</p>
-<p>~ 当前用户目录   /根目录    . 当前目录   … 上一级目录<br>
-$ 当前目录   # root  用户目录<br>
-创建目录 ： mkdir &lt;目录名&gt;<br>
-删除目录 ： rmdir &lt;目录名&gt;<br>
-删除 ： rm  -rf  &lt;目录或文件&gt;<br>
-移动 ： mv<br>
-创建文件：touch<br>
-打开文件： vi  进入文件编辑后 按ESC 然后输入：wq存并退出  ：q,不保存退出<br>
-查看文件内容 ： cat</p>
-<p>exit;   — 退出</p>
-<p>whoamis --当前是什么用户在使用</p>
-<p>whereis mysql   --查看应用安装的目录 格式：  whereis 应用名</p>
-<p>权限  二进制<br>
-r(4 100)  w(2  010)  x(1 001) 读 写 执行<br>
-chmod 授权给  例如 chmod  775  software</p>
-<p>//安装ssh<br>
-sudo apt-get install openssh-server  sudo spt-get install ssh</p>
-<h1>MySql相关指令</h1>
-<h3 id="1、MySQL常用命令">1、MySQL常用命令</h3>
-<p>create database name; 创建数据库</p>
+<p> 由于以前的数据全存在内存中，从而我们重复读取get a的时候会导致失败<br>[root@localhost conf]# <code>cat redis.conf</code><br>[root@localhost conf]# <code>docker exec -it redis redis-cli</code><br>127.0.0.1:6379&gt;<code>set a b</code><br>OK<br>127.0.0.1:6379&gt; <code>get a</code><br>“b”   //从而在一次上来的时候这块是null<br>127.0.0.1:6379&gt; exit</p>
+<p>—让redis 持久化  —-&gt; pwd<br>127.0.0.1:6379&gt; exit<br>[root@localhost conf]# <code>pwd</code><br>/mydata/redis/conf<br>[root@localhost conf]# <code>ls</code><br>redis.conf<br>[root@localhost conf]# <code>vi redis.conf</code><br>按  <code>i</code><br>输入<code>appendonly yes</code><br>按<code>esc</code>  输入<code>:wq</code></p>
+<p><code>docker restart redis  //重启redis</code><br>—设置开机自启动docker 里边容器<br><code>sudo docker update &lt;容器名&gt; --restart=always</code></p>
+<h1 id="Linux指令"><a href="#Linux指令" class="headerlink" title="Linux指令"></a>Linux指令</h1><p>whoami  —谁的账号</p>
+<p>ls /    ——查看的当前运行的</p>
+<p>~ 当前用户目录   /根目录    . 当前目录   .. 上一级目录<br>$ 当前目录   # root  用户目录<br>创建目录 ： mkdir &lt;目录名&gt;<br>删除目录 ： rmdir &lt;目录名&gt;<br>删除 ： rm  -rf  &lt;目录或文件&gt;<br>移动 ： mv<br>创建文件：touch<br>打开文件： vi  进入文件编辑后 按ESC 然后输入：wq存并退出  ：q,不保存退出<br>查看文件内容 ： cat  </p>
+<p>exit;   —- 退出</p>
+<p> whoamis —当前是什么用户在使用</p>
+<p> whereis mysql   —查看应用安装的目录 格式：  whereis 应用名 </p>
+<p>权限  二进制<br> r(4 100)  w(2  010)  x(1 001) 读 写 执行<br>chmod 授权给  例如 chmod  775  software</p>
+<p>//安装ssh<br>sudo apt-get install openssh-server  sudo spt-get install ssh</p>
+<h1 id="MySql相关指令"><a href="#MySql相关指令" class="headerlink" title="MySql相关指令"></a>MySql相关指令</h1><h3 id="1、MySQL常用命令"><a href="#1、MySQL常用命令" class="headerlink" title="1、MySQL常用命令"></a>1、MySQL常用命令</h3><p>create database name; 创建数据库</p>
 <p>use databasename; 选择数据库</p>
 <p>drop database name 直接删除数据库，不提醒</p>
 <p>show tables; 显示表</p>
@@ -429,16 +299,14 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>mysqladmin drop databasename 删除数据库前，有提示。</p>
 <p>显示当前mysql版本和当前日期</p>
 <p>select version(),current_date;</p>
-<h3 id="2、修改mysql中root的密码：">2、修改mysql中root的密码：</h3>
-<p>shell&gt;mysql -u root -p</p>
+<h3 id="2、修改mysql中root的密码："><a href="#2、修改mysql中root的密码：" class="headerlink" title="2、修改mysql中root的密码："></a>2、修改mysql中root的密码：</h3><p>shell&gt;mysql -u root -p</p>
 <p>mysql&gt; update user set password=password(”xueok654123″) where user=’root’;</p>
 <p>mysql&gt; flush privileges //刷新数据库</p>
 <p>mysql&gt;use dbname； 打开数据库：</p>
 <p>mysql&gt;show databases; 显示所有数据库</p>
 <p>mysql&gt;show tables; 显示数据库mysql中所有的表：先use mysql；然后</p>
 <p>mysql&gt;describe user; 显示表mysql数据库中user表的列信息)；</p>
-<h3 id="3、grant">3、grant</h3>
-<p>创建一个可以从任何地方连接服务器的一个完全的超级用户，但是必须使用一个口令something做这个</p>
+<h3 id="3、grant"><a href="#3、grant" class="headerlink" title="3、grant"></a>3、grant</h3><p>创建一个可以从任何地方连接服务器的一个完全的超级用户，但是必须使用一个口令something做这个</p>
 <p>mysql&gt; grant all privileges on <em>.</em> to user@localhost identified by ’something’ with</p>
 <p>增加新用户</p>
 <p>格式：grant select on 数据库.* to 用户名@登录主机 identified by “密码”</p>
@@ -449,11 +317,10 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>mysql&gt; delete from user where user=”root” and host=”%”;</p>
 <p>mysql&gt; flush privileges;</p>
 <p>创建一个用户custom在特定客户端it363.com登录，可访问特定数据库fangchandb</p>
-<p>mysql &gt;grant select, insert, update, delete, create,drop on fangchandb.* to custom@ <a target="_blank" rel="noopener" href="http://it363.com">it363.com</a> identified by ‘ passwd’</p>
+<p>mysql &gt;grant select, insert, update, delete, create,drop on fangchandb.* to custom@ it363.com identified by ‘ passwd’</p>
 <p>重命名表:</p>
 <p>mysql &gt; alter table t1 rename t2;</p>
-<h3 id="4、mysqldump">4、mysqldump</h3>
-<p>备份数据库</p>
+<h3 id="4、mysqldump"><a href="#4、mysqldump" class="headerlink" title="4、mysqldump"></a>4、mysqldump</h3><p>备份数据库</p>
 <p>shell&gt; mysqldump -h host -u root -p dbname &gt;dbname_backup.sql</p>
 <p>恢复数据库</p>
 <p>shell&gt; mysqladmin -h myhost -u root -p create dbname</p>
@@ -465,16 +332,13 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>那么如果我只想要数据，而不想要什么sql命令时，应该如何操作呢？</p>
 <p>mysqldump -T./ phptest driver</p>
 <p>其中，只有指定了-T参数才可以卸出纯文本文件，表示卸出数据的目录，./表示当前目录，即与mysqldump同一目录。如果不指定driver 表，则将卸出整个数据库的数据。每个表会生成两个文件，一个为.sql文件，包含建表执行。另一个为.txt文件，只包含数据，且没有sql指令。</p>
-<h3 id="5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。">5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。</h3>
-<p>例如，如果在文件my_file.sql 中存放有查</p>
+<h3 id="5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。"><a href="#5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。" class="headerlink" title="5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。"></a>5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。</h3><p>例如，如果在文件my_file.sql 中存放有查</p>
 <p>询，可如下执行这些查询：</p>
 <p>例如，如果您想将建表语句提前写在sql.txt中:</p>
 <p>mysql &gt; mysql -h myhost -u root -p database &lt; sql.txt</p>
 <p>================================================================================</p>
 <p>转 mysql命令</p>
-<h2 id="一-安装与配置MYSQL">一 . 安装与配置MYSQL</h2>
-<h2 id="二-常用mysql命令行命令">二 . 常用mysql命令行命令</h2>
-<p>1 .mysql的启动与停止</p>
+<h2 id="一-安装与配置MYSQL"><a href="#一-安装与配置MYSQL" class="headerlink" title="一 . 安装与配置MYSQL"></a>一 . 安装与配置MYSQL</h2><h2 id="二-常用mysql命令行命令"><a href="#二-常用mysql命令行命令" class="headerlink" title="二 . 常用mysql命令行命令　"></a>二 . 常用mysql命令行命令　</h2><p>1 .mysql的启动与停止</p>
 <p>启动MYSQL服务 net start mysql</p>
 <p>停止MYSQL服务 net stop mysql</p>
 <p>2 . netstat –na | findstr 3306 查看被监听的端口 , findstr用于查找后面的端口是否存在</p>
@@ -488,20 +352,19 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>8 . 显示某个表创建时的全部信息 : show create table table_name;</p>
 <p>9 . 查看表的具体属性信息及表中各字段的描述</p>
 <p>Describe table_name; 缩写形式 : desc table_name;</p>
-<h2 id="三-。-MySql中的SQL语句">三 。 MySql中的SQL语句</h2>
-<p>1 . 数据库创建 : Create database db_name;</p>
+<h2 id="三-。-MySql中的SQL语句"><a href="#三-。-MySql中的SQL语句" class="headerlink" title="三 。 MySql中的SQL语句"></a>三 。 MySql中的SQL语句</h2><p>1 . 数据库创建 : Create database db_name;</p>
 <p>数据库删除 : Drop database db_name; 删除时可先判断是否存在，写成 : drop database if exits db_name</p>
 <p>2 . 建表 : 创建数据表的语法 : create table table_name (字段1 数据类型 , 字段2 数据类型);</p>
 <p>例 : create table mytable (id int , username char(20));</p>
 <p>删表 : drop table table_name; 例 : drop table mytable;</p>
-<p>8 . 添加数据 : Insert into 表名 [(字段1 , 字段2 , ….)] values (值1 , 值2 , ……);</p>
+<p>8 . 添加数据 : Insert into 表名 [(字段1 , 字段2 , ….)] values (值1 , 值2 , …..);</p>
 <p>如果向表中的每个字段都插入一个值,那么前面 [ ] 括号内字段名可写也可不写</p>
 <p>例 : insert into mytable (id,username) values (1,’zhangsan’);</p>
 <p>9 . 查询 : 查询所有数据 : select * from table_name;</p>
 <p>查询指定字段的数据 : select 字段1 , 字段2 from table_name;</p>
-<p>例 : select id,username from mytable where id=1 order by desc;多表查询语句------------参照第17条实例</p>
+<p>例 : select id,username from mytable where id=1 order by desc;多表查询语句——————参照第17条实例</p>
 <p>10 . 更新指定数据 , 更新某一个字段的数据(注意，不是更新字段的名字)</p>
-<p>Update table_name set 字段名=’新值’ [, 字段2 =’新值’ , ……][where id=id_num] [order by 字段 顺序]</p>
+<p>Update table_name set 字段名=’新值’ [, 字段2 =’新值’ , …..][where id=id_num] [order by 字段 顺序]</p>
 <p>例 : update mytable set username=’lisi’ where id=1;</p>
 <p>Order语句是查询的顺序 , 如 : order by id desc(或asc) , 顺序有两种 : desc倒序(100—1,即从最新数据往后查询),asc(从1-100)，Where和order语句也可用于查询select 与删除delete</p>
 <p>11 . 删除表中的信息 :</p>
@@ -515,7 +378,7 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>Grant all ON db_name.table_name TO user_name [ indentified by ‘password’ ];</p>
 <p>14 . 表结构的修改</p>
 <p>(1)增加一个字段格式：</p>
-<p>alter table table_name add column (字段名 字段类型); ----此方法带括号</p>
+<p>alter table table_name add column (字段名 字段类型); ——此方法带括号</p>
 <p>(2)指定字段插入的位置：</p>
 <p>alter table table_name add column 字段名 字段类型 after 某字段；</p>
 <p>删除一个字段：</p>
@@ -529,73 +392,73 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>15 . 增加主键，外键，约束，索引。。。。(使用方法见17实例)</p>
 <p>① 约束(主键Primary key、唯一性Unique、非空Not Null)</p>
 <p>② 自动增张 auto_increment</p>
-<p>③外键Foreign key-----与reference table_name(col_name列名)配合使用，建表时单独使用</p>
-<p>④ 删除多个表中有关联的数据----设置foreign key 为set null —具体设置参考帮助文档</p>
+<p>③外键Foreign key——-与reference table_name(col_name列名)配合使用，建表时单独使用</p>
+<p>④ 删除多个表中有关联的数据——设置foreign key 为set null —-具体设置参考帮助文档</p>
 <p>16 . 查看数据库当前引擎</p>
 <p>SHOW CREATE TABLE table_name;</p>
 <p>修改数据库引擎</p>
 <p>ALTER TABLE table_name ENGINE=MyISAM | InnoDB;</p>
 <p>17 . SQL语句运用实例:</p>
-<p><strong>–1 建users表</strong></p>
+<p><strong>—1 建users表</strong></p>
 <p>create table users (id int primary key auto_increment,nikename varchar(20) not null unique,password varchar(100) not null,address varchar(200), reg_date timestamp not null default CURRENT_TIMESTAMP);</p>
-<p><strong>–2 建articles表,在建表时设置外键</strong></p>
+<p><strong>—2 建articles表,在建表时设置外键</strong></p>
 <p>create table articles (id int primary key auto_increment,content longtext not null,userid int,constraint foreign key (userid) references users(id) on delete set null);</p>
 <hr>
-<p><strong>–2.1 建articles表,建表时不设置外键</strong></p>
+<p><strong>—2.1 建articles表,建表时不设置外键</strong></p>
 <p>create table articles (id int primary key auto_increment,content longtext not null,userid int);</p>
 <p>-<strong>-2.2 给articles表设置外键</strong></p>
 <p>alter table articles add constraint foreign key (userid) references users(id) on delete set null;</p>
 <hr>
-<p><strong>–3. 向users表中插入数据,同时插入多条</strong></p>
-<p>insert into users (id,nikename,password,address) values (1,‘lyh1’,‘1234’,null),(10,‘lyh22’,‘4321’,‘湖北武汉’),(null,‘lyh333’,‘5678’, ‘北京海淀’);</p>
-<p><strong>–4. 向article中插入三条数据</strong></p>
-<p>insert into articles (id,content,userid) values (2,‘hahahahahaha’,11),(null,‘xixixixixix’,10),(13,‘aiaiaiaiaiaiaiaiaiaiaiaia’,1),(14,‘hohoahaoaoooooooooo’,10);</p>
-<p><strong>–5. 进行多表查询，选择users表中ID=10的用户发布的所有留言及该用户的所有信息</strong></p>
-<p>select <a target="_blank" rel="noopener" href="http://articles.id">articles.id</a>,articles.content,users.* from users,articles where users.id=10 and <a target="_blank" rel="noopener" href="http://articles.userid=users.id">articles.userid=users.id</a> order by <a target="_blank" rel="noopener" href="http://articles.id">articles.id</a> desc;</p>
-<p><strong>–6. 查看数据库引擎类型</strong></p>
+<p><strong>—3. 向users表中插入数据,同时插入多条</strong></p>
+<p>insert into users (id,nikename,password,address) values (1,’lyh1’,’1234’,null),(10,’lyh22’,’4321’,’湖北武汉’),(null,’lyh333’,’5678’, ‘北京海淀’);</p>
+<p><strong>—4. 向article中插入三条数据</strong></p>
+<p>insert into articles (id,content,userid) values (2,’hahahahahaha’,11),(null,’xixixixixix’,10),(13,’aiaiaiaiaiaiaiaiaiaiaiaia’,1),(14,’hohoahaoaoooooooooo’,10);</p>
+<p><strong>—5. 进行多表查询，选择users表中ID=10的用户发布的所有留言及该用户的所有信息</strong></p>
+<p>select articles.id,articles.content,users.* from users,articles where users.id=10 and articles.userid=users.id order by articles.id desc;</p>
+<p><strong>—6. 查看数据库引擎类型</strong></p>
 <p>show create table users;</p>
-<p><strong>–7. 修改数据库引擎类型</strong></p>
-<p>alter table users engine=MyISAM; —因为users表中ID被设置成外键，执行此句会出错</p>
+<p><strong>—7. 修改数据库引擎类型</strong></p>
+<p>alter table users engine=MyISAM; —-因为users表中ID被设置成外键，执行此句会出错</p>
 <p>-<strong>-8. 同表查询,已知一个条件的情况下.查询ID号大于用户lyh1的ID号的所有用户</strong></p>
-<p>select <a target="_blank" rel="noopener" href="http://a.id">a.id</a>,a.nikename,a.address from users a,users b where b.nikename=‘lyh1’ and <a target="_blank" rel="noopener" href="http://a.id">a.id</a>&gt;<a target="_blank" rel="noopener" href="http://b.id">b.id</a>;</p>
-<p>------也可写成</p>
-<p>select id,nikename,address from users where id&gt;(select id from users where nikename=‘lyh1’);</p>
+<p>select a.id,a.nikename,a.address from users a,users b where b.nikename=’lyh1’ and a.id&gt;b.id;</p>
+<p>———也可写成</p>
+<p>select id,nikename,address from users where id&gt;(select id from users where nikename=’lyh1’);</p>
 <ol>
 <li><strong>显示年龄比领导还大的员工：</strong></li>
 </ol>
-<p>select <a target="_blank" rel="noopener" href="http://a.name">a.name</a> from users a,users b where <a target="_blank" rel="noopener" href="http://a.managerid=b.id">a.managerid=b.id</a> and a.age&gt;b.age;</p>
+<p>select a.name from users a,users b where a.managerid=b.id and a.age&gt;b.age;</p>
 <p><strong>查询编号为2的发帖人: 先查articles表,得到发帖人的编号,再根据编号查users得到的用户名。</strong></p>
 <p><strong>接着用关联查询.</strong></p>
 <p>select * from articles,users得到笛卡儿积,再加order by articles.id以便观察</p>
 <p>使用select * from articles,users where articles.id=2 筛选出2号帖子与每个用户的组合记录</p>
 <p>再使用select * from articles,users where articles.id=2 and articles.userid=users.id选出users.id等于2号帖的发帖人id的记录.</p>
-<p>只取用户名:select user where user.id=(select userid from articles where <a target="_blank" rel="noopener" href="http://article.id">article.id</a> =2)</p>
+<p>只取用户名:select user where user.id=(select userid from articles where article.id =2)</p>
 <p>找出年龄比小王还大的人:假设小王是28岁,先想找出年龄大于28的人</p>
-<p>select * from users where age&gt;(select age from users where name=‘xiaowang’);</p>
-<p>*<strong>要查询的记录需要参照表里面的其他记录:</strong></p>
-<p>select <a target="_blank" rel="noopener" href="http://a.name">a.name</a> from users a,users b where b.name=‘xiaowang’ and a.age&gt;b.age</p>
-<p>表里的每个用户都想pk一下.select a.nickname,b.nickname from users a,users b where <a target="_blank" rel="noopener" href="http://a.id">a.id</a>&gt;<a target="_blank" rel="noopener" href="http://b.id">b.id</a> ;</p>
+<p>select * from users where age&gt;(select age from users where name=’xiaowang’);</p>
+<p><strong>*要查询的记录需要参照表里面的其他记录:</strong></p>
+<p>select a.name from users a,users b where b.name=’xiaowang’ and a.age&gt;b.age</p>
+<p>表里的每个用户都想pk一下.select a.nickname,b.nickname from users a,users b where a.id&gt;b.id ;</p>
 <p>更保险的语句:select a.nickname,b.nickname from (select * from users order by id) a,(se</p>
-<p>lect * from users order by id) b where <a target="_blank" rel="noopener" href="http://a.id">a.id</a>&gt;<a target="_blank" rel="noopener" href="http://b.id">b.id</a> ;</p>
+<p>lect * from users order by id) b where a.id&gt;b.id ;</p>
 <p>再查询某个人发的所有帖子.</p>
 <p>select b.* from articles a , articles b where a.id=2 and a.userid=b.userid</p>
 <p>说明: 表之间存在着关系，ER概念的解释，用access中的示例数据库演示表之间的关系.只有innodb引擎才支持foreign key，mysql的任何引擎目前都不支持check约束。</p>
 <p><strong>四、字符集出现错误解决办法</strong></p>
 <p>出现的问题：</p>
 <p>mysql&gt; update users</p>
-<p>-&gt; set username=‘关羽’</p>
+<p>-&gt; set username=’关羽’</p>
 <p>-&gt; where userid=2;</p>
-<p>ERROR 1366 (HY000): Incorrect string value: ‘/xB9/xD8/xD3/xF0’ for column 'usern</p>
+<p>ERROR 1366 (HY000): Incorrect string value: ‘/xB9/xD8/xD3/xF0’ for column ‘usern</p>
 <p>ame’ at row 1</p>
 <p>向表中插入中文字符时，出现错误。</p>
 <p>mysql&gt; select * from users;</p>
-<p>±-------±---------+</p>
+<p>+————+—————+</p>
 <p>| userid | username |</p>
-<p>±-------±---------+</p>
-<p>| 2 | ??? |</p>
-<p>| 3 | ??? |</p>
+<p>+————+—————+</p>
+<p>| 2 | ???? |</p>
+<p>| 3 | ???? |</p>
 <p>| 4 | ?í?ù |</p>
-<p>±-------±---------+</p>
+<p>+————+—————+</p>
 <p>3 rows in set (0.00 sec)</p>
 <p>表中的中文字符位乱码。</p>
 <p>解决办法：</p>
@@ -622,11 +485,11 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <hr>
 <p>查看mysql发现Server characterset，Db characterset的字符集设成了latin1，所以出现中文乱码。</p>
 <p>mysql&gt; show tables;</p>
-<p>±---------------+</p>
+<p>+————————+</p>
 <p>| Tables_in_test |</p>
-<p>±---------------+</p>
+<p>+————————+</p>
 <p>| users |</p>
-<p>±---------------+</p>
+<p>+————————+</p>
 <p>1 row in set (0.00 sec)</p>
 <p>更改表的字符集。</p>
 <p>mysql&gt; alter table users character set GBK;</p>
@@ -635,45 +498,45 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>查看表的结构：</p>
 <p>mysql&gt; show create users;</p>
 <p>ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that</p>
-<p>corresponds to your MySQL server version for the right syntax to use near 'users</p>
-<p>’ at line 1</p>
+<p>corresponds to your MySQL server version for the right syntax to use near ‘users</p>
+<p>‘ at line 1</p>
 <p>mysql&gt; show create table users;</p>
-<p>±------±----------------------------------------------------------------------</p>
-<p>------------------------------------------------------------------------------+</p>
+<p>+———-+———————————————————————————————————-</p>
+<p>———————————————————————————————————————+</p>
 <p>| Table | Create Table</p>
 <p>|</p>
-<p>±------±----------------------------------------------------------------------</p>
-<p>------------------------------------------------------------------------------+</p>
+<p>+———-+———————————————————————————————————-</p>
+<p>———————————————————————————————————————+</p>
 <p>| users | CREATE TABLE <code>users</code> (</p>
 <p><code>userid</code> int(11) default NULL,</p>
 <p><code>username</code> char(20) character set latin1 default NULL</p>
 <p>) ENGINE=InnoDB DEFAULT CHARSET=gbk |</p>
-<p>±------±----------------------------------------------------------------------</p>
-<p>------------------------------------------------------------------------------+</p>
+<p>+———-+———————————————————————————————————-</p>
+<p>———————————————————————————————————————+</p>
 <p>1 row in set (0.00 sec)</p>
 <p>mysql&gt; desc users;</p>
-<p>±---------±---------±-----±----±--------±------+</p>
+<p>+—————+—————+———+——-+————-+———-+</p>
 <p>| Field | Type | Null | Key | Default | Extra |</p>
-<p>±---------±---------±-----±----±--------±------+</p>
+<p>+—————+—————+———+——-+————-+———-+</p>
 <p>| userid | int(11) | YES | | NULL | |</p>
 <p>| username | char(20) | YES | | NULL | |</p>
-<p>±---------±---------±-----±----±--------±------+</p>
+<p>+—————+—————+———+——-+————-+———-+</p>
 <p>2 rows in set (0.02 sec)</p>
 <p>这时向表中插入中文然后有错误。</p>
-<p>mysql&gt; insert into users values(88,‘中文’);</p>
-<p>ERROR 1366 (HY000): Incorrect string value: ‘/xD6/xD0/xCE/xC4’ for column 'usern</p>
+<p>mysql&gt; insert into users values(88,’中文’);</p>
+<p>ERROR 1366 (HY000): Incorrect string value: ‘/xD6/xD0/xCE/xC4’ for column ‘usern</p>
 <p>ame’ at row 1</p>
-<p>mysql&gt; insert into users values(88,‘中文’);</p>
-<p>ERROR 1366 (HY000): Incorrect string value: ‘/xD6/xD0/xCE/xC4’ for column 'usern</p>
+<p>mysql&gt; insert into users values(88,’中文’);</p>
+<p>ERROR 1366 (HY000): Incorrect string value: ‘/xD6/xD0/xCE/xC4’ for column ‘usern</p>
 <p>ame’ at row 1</p>
 <p>还要更改users表的username的字符集。</p>
 <p>mysql&gt; alter table users modify username char(20) character set gbk;</p>
-<p>ERROR 1366 (HY000): Incorrect string value: ‘/xC0/xEE/xCB/xC4’ for column 'usern</p>
+<p>ERROR 1366 (HY000): Incorrect string value: ‘/xC0/xEE/xCB/xC4’ for column ‘usern</p>
 <p>ame’ at row 1</p>
 <p>mysql&gt; alter table users modify username char(20) character set gbk;</p>
-<p>ERROR 1366 (HY000): Incorrect string value: ‘/xC0/xEE/xCB/xC4’ for column 'usern</p>
+<p>ERROR 1366 (HY000): Incorrect string value: ‘/xC0/xEE/xCB/xC4’ for column ‘usern</p>
 <p>ame’ at row 1</p>
-<p>因为表中已经有数据，所以更改username字符集的操作没有成***</p>
+<p>因为表中已经有数据，所以更改username字符集的操作没有成<em>*</em></p>
 <p>清空users表中的数据</p>
 <p>mysql&gt; truncate table users;</p>
 <p>Query OK, 3 rows affected (0.01 sec)</p>
@@ -681,15 +544,15 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>mysql&gt; alter table users modify username char(20) character set gbk;</p>
 <p>Query OK, 0 rows affected (0.06 sec)</p>
 <p>Records: 0 Duplicates: 0 Warnings: 0</p>
-<p>这时再插入中文字符，插入成***。</p>
-<p>mysql&gt; insert into users values(88,‘中文’);</p>
+<p>这时再插入中文字符，插入成<em>*</em>。</p>
+<p>mysql&gt; insert into users values(88,’中文’);</p>
 <p>Query OK, 1 row affected (0.01 sec)</p>
 <p>mysql&gt; select * from users;</p>
-<p>±-------±---------+</p>
+<p>+————+—————+</p>
 <p>| userid | username |</p>
-<p>±-------±---------+</p>
+<p>+————+—————+</p>
 <p>| 88 | 中文 |</p>
-<p>±-------±---------+</p>
+<p>+————+—————+</p>
 <p>1 row in set (0.00 sec)</p>
 <p>mysql&gt;</p>
 <p>================================================================================</p>
@@ -699,7 +562,7 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p><strong>2、进入mysql交互操作界面</strong></p>
 <p>在DOS方式下，运行： d:mysqlbinmysql</p>
 <p>出现: mysql 的提示符，此时已进入mysql的交互操作方式。</p>
-<p>如果出现 &quot;ERROR 2003: Can′t connect to MySQL server on ′localhost′ (10061)“，</p>
+<p>如果出现 “ERROR 2003: Can′t connect to MySQL server on ′localhost′ (10061)“，</p>
 <p>说明你的MySQL还没有启动。</p>
 <p><strong>3、退出MySQL操作界面</strong></p>
 <p>在mysql&gt;提示符下输入quit可以随时退出交互操作界面：</p>
@@ -708,11 +571,11 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>你也可以用control-D退出。</p>
 <p><strong>4、第一条命令</strong></p>
 <p>mysql&gt; select version(),current_date();</p>
-<p>±---------------±----------------+</p>
+<p>+————————+————————-+</p>
 <p>| version() | current_date() |</p>
-<p>±---------------±----------------+</p>
+<p>+————————+————————-+</p>
 <p>| 3.23.25a-debug | 2001-05-17 |</p>
-<p>±---------------±----------------+</p>
+<p>+————————+————————-+</p>
 <p>1 row in set (0.01 sec)</p>
 <p>mysql&gt;</p>
 <p>此命令要求mysql服务器告诉你它的版本号和当前日期。尝试用不同大小写操作上述命令，看结果如何。结果说明mysql命令的大小写结果是一致的。</p>
@@ -722,45 +585,44 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>mysql&gt;Select (20+5)*4 AS Result,sin(pi()/3); (AS: 指定假名为Result)</p>
 <p><strong>5、多行语句</strong></p>
 <p>一条命令可以分成多行输入，直到出现分号“；”为止：</p>
-<p>bordercolorlight = “black” bordercolordark = “#FFFFFF” align=“center”&gt;</p>
-<p>mysql&gt; select<br>
--&gt; USER()</p>
+<p>bordercolorlight = “black” bordercolordark = “#FFFFFF” align=”center”&gt;</p>
+<p> mysql&gt; select<br>-&gt; USER()</p>
 <p>-&gt; ,</p>
 <p>-&gt; now()</p>
 <p>-&gt;;</p>
-<p>±-------------------±--------------------+</p>
+<p>+——————————+——————————-+</p>
 <p>| USER() | now() |</p>
-<p>±-------------------±--------------------+</p>
+<p>+——————————+——————————-+</p>
 <p>| ODBC@localhost | 2001-05-17 22:59:15 |</p>
-<p>±-------------------±--------------------+</p>
+<p>+——————————+——————————-+</p>
 <p>1 row in set (0.06 sec)</p>
 <p>mysql&gt;</p>
 <p>注意中间的逗号和最后的分号的使用方法。</p>
 <p><strong>6、一行多命令</strong></p>
 <p>输入如下命令：</p>
 <p>mysql&gt; SELECT USER(); SELECT NOW();</p>
-<p>±-----------------+</p>
+<p>+—————————+</p>
 <p>| USER() |</p>
-<p>±-----------------+</p>
+<p>+—————————+</p>
 <p>| ODBC@localhost |</p>
-<p>±-----------------+</p>
+<p>+—————————+</p>
 <p>1 row in set (0.00 sec)</p>
-<p>±--------------------+</p>
+<p>+——————————-+</p>
 <p>| NOW() |</p>
-<p>±--------------------+</p>
+<p>+——————————-+</p>
 <p>| 2001-05-17 23:06:15 |</p>
-<p>±--------------------+</p>
+<p>+——————————-+</p>
 <p>1 row in set (0.00 sec)</p>
 <p>mysql&gt;</p>
 <p>注意中间的分号，命令之间用分号隔开。</p>
 <p><strong>7、显示当前存在的数据库</strong></p>
 <p>mysql&gt; show databases;</p>
-<p>±---------+</p>
+<p>+—————+</p>
 <p>| Database |</p>
-<p>±---------+</p>
+<p>+—————+</p>
 <p>| mysql |</p>
 <p>| test |</p>
-<p>±---------+</p>
+<p>+—————+</p>
 <p>2 row in set (0.06 sec)</p>
 <p>mysql&gt;</p>
 <p><strong>8、选择数据库并显示当前选择的数据库</strong></p>
@@ -769,11 +631,11 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>mysql&gt;</p>
 <p>(USE 和 QUIT 命令不需要分号结束。)</p>
 <p>mysql&gt; select database();</p>
-<p>±--------------+</p>
+<p>+———————-+</p>
 <p>| database() |</p>
-<p>±--------------+</p>
+<p>+———————-+</p>
 <p>| mysql |</p>
-<p>±--------------+</p>
+<p>+———————-+</p>
 <p>1 row in set (0.00 sec)</p>
 <p><strong>9、显示当前数据库中存在的表</strong></p>
 <p>mysql&gt; SHOW TABLES;</p>
@@ -796,7 +658,7 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p><strong>1、连接到本机上的MYSQL。</strong></p>
 <p>首先打开DOS窗口，然后进入目录mysql/bin，再键入命令mysql -u root -p，回车后提示你输密码.注意用户名前可以有空格也可以没有空格，但是密码前必须没有空格，否则让你重新输入密码.</p>
 <p>如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是： mysql&gt;</p>
-<p>**2、连接到远程主机上的MYSQL。**假设远程主机的IP为：110.110.110.110，用户名为root,密码为abcd123。则键入以下命令：</p>
+<p><strong>2、连接到远程主机上的MYSQL。</strong>假设远程主机的IP为：110.110.110.110，用户名为root,密码为abcd123。则键入以下命令：</p>
 <p>mysql -h110.110.110.110 -u root -p 123; (注:u与root之间可以不用加空格，其它也一样)</p>
 <p><strong>3、退出MYSQL命令： exit (回车)</strong></p>
 <p><strong>二、修改密码。</strong></p>
@@ -872,8 +734,8 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>year date</p>
 <p>); //建表结束</p>
 <p>//以下为插入字段</p>
-<p>insert into teacher values(”,’allen’,'大连一中’,'1976-10-10′);</p>
-<p>insert into teacher values(”,’jack’,'大连二中’,'1975-12-23′);</p>
+<p>insert into teacher values(”,’allen’,’大连一中’,’1976-10-10′);</p>
+<p>insert into teacher values(”,’jack’,’大连二中’,’1975-12-23′);</p>
 <p>如果你在mysql提示符键入上面的命令也可以，但不方便调试。</p>
 <p>(1)你可以将以上命令原样写入一个文本文件中，假设为school.sql，然后复制到c://下，并在DOS状态进入目录[url=file:mysql//bin]//mysql//bin[/url]，然后键入以下命令：</p>
 <p>mysql -uroot -p密码 &lt; c://school.sql</p>
@@ -906,35 +768,35 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>create dbTest</p>
 <p>exit</p>
 <p>最后，导入数据库</p>
-<p>mysql -uroot -p123456 dbTest</p>
+<p>mysql -uroot -p123456 dbTest </p>
 <p>数据库及表导出导入示例：</p>
 <p>导出数据库</p>
 <p>mysqldump -u root -p123456 gameTop &gt; gameTop_db.sql</p>
 <p>导出数据库的表</p>
 <p>mysqldump -u -p123456 root gameTop gametop800 &gt; gameTop_table.sql</p>
 <p>导出数据库的特定表</p>
-<p>mysqldump -u root -p123456  gameTop --table gametop800  &gt; gameTop_table.sql</p>
+<p>mysqldump -u root -p123456  gameTop —table gametop800  &gt; gameTop_table.sql</p>
 <p>导出数据库(只导结构，不要数据)</p>
-<p>mysqldump -u root -p123456 --opt -d gameTop &gt; gameTop_db.sql</p>
+<p>mysqldump -u root -p123456 —opt -d gameTop &gt; gameTop_db.sql</p>
 <p>或者</p>
 <p>mysqldump -u root -p123456  -d gameTop &gt; gameTop_db.sql</p>
 <p>导出数据库(只导数据，不要结构)</p>
 <p>mysqldump -u root -p123456  -t gameTop &gt; gameTop_db.sql</p>
 <p>注：不加 -d 和 -t 则既导出结构，也导出数据</p>
 <p>mysqldump导出抛出异常：</p>
-<p>mysqldump: Got error: 1044: Access denied for user ‘username’@‘%’ to database ‘dbname’ when using LOCK TABLES</p>
-<p>解决办法，添加参数 --skip-lock-tables：</p>
-<p>mysqldump --skip-lock-tables -h172.88.12.102 -username-pAnJnVs3C2tYXyTwV dbname&gt; dbname_bk.sql</p>
+<p>mysqldump: Got error: 1044: Access denied for user ‘username’@’%’ to database ‘dbname’ when using LOCK TABLES</p>
+<p>解决办法，添加参数 —skip-lock-tables：</p>
+<p>mysqldump —skip-lock-tables -h172.88.12.102 -username-pAnJnVs3C2tYXyTwV dbname&gt; dbname_bk.sql</p>
 <hr>
 <p>导入数据库：</p>
 <p>登录MySQL:      mysql -uroot -p123456</p>
 <p>创建数据库：    create database gameTop;</p>
 <p>导入数据库：</p>
-<p>mysql -uroot -p123456 gameTop</p>
+<p>mysql -uroot -p123456 gameTop </p>
 <p>导入数据库表：</p>
 <p>mysql -uroot -p123456 gameTop  gametop800 &lt;  gameTop_table.sql</p>
 <p>导入数据库表：</p>
-<p>mysql -uroot -p123456 gameTop</p>
+<p>mysql -uroot -p123456 gameTop  </p>
 <p>==================================================================================</p>
 <p>1:使用SHOW语句找出在服务器上当前存在什么数据库：</p>
 <p>mysql&gt; SHOW DATABASES;</p>
@@ -965,7 +827,7 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>在windows中MySql以服务形式存在，在使用前应确保此服务已经启动，未启动可用net start mysql命令启动。而Linux中启动时可用“/etc/rc.d/init.d/mysqld start”命令，注意启动者应具有管理员权限。</p>
 <p>刚安装好的MySql包含一个含空密码的root帐户和一个匿名帐户，这是很大的安全隐患，对于一些重要的应用我们应将安全性尽可能提高，在这里应把匿名帐户删除、 root帐户设置密码，可用如下命令进行：</p>
 <p>use mysql;</p>
-<p>delete from User where User=”&quot;;</p>
+<p>delete from User where User=””;</p>
 <p>update User set Password=PASSWORD(’newpassword’) where User=’root’;</p>
 <p>如果要对用户所用的登录终端进行限制，可以更新User表中相应用户的Host字段，在进行了以上更改后应重新启动数据库服务，此时登录时可用如下类似命令：</p>
 <p>mysql -uroot -p;</p>
@@ -980,7 +842,7 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>grant select,insert,update on mydb.* to NewUserName@HostName identified by “password”;</p>
 <p>grant update,delete on mydb.TestTable to NewUserName@HostName identified by “password”;</p>
 <p>若 要给此用户赋予他在相应对象上的权限的管理能力，可在GRANT后面添加WITH GRANT OPTION选项。而对于用插入User表添加的用户，Password字段应用PASSWORD 函数进行更新加密，以防不轨之人窃看密码。对于那些已经不用的用户应给予清除，权限过界的用户应及时回收权限，回收权限可以通过更新User表相应字段， 也可以使用REVOKE操作。</p>
-<p>下面给出本人从其它资料(<a target="_blank" rel="noopener" href="http://www.cn-Java.com">www.cn-Java.com</a>)获得的对常用权限的解释：</p>
+<p>下面给出本人从其它资料(www.cn-Java.com)获得的对常用权限的解释：</p>
 <p>全局管理权限：</p>
 <p>FILE: 在MySQL服务器上读写文件。</p>
 <p>PROCESS: 显示或杀死属于其它用户的服务线程。</p>
@@ -999,19 +861,12 @@ sudo apt-get install openssh-server  sudo spt-get install ssh</p>
 <p>USAGE: 只允许登录–其它什么也不允许做。</p>
 <p>知识拓展：</p>
 <p>mysql -uroot -p123456 gameTop  gametop800</p>
-<h1>我的Spring Cloud的项目配置文件指令：</h1>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-machine -s &quot;E:\SoftWaves\dicker&quot; create --engine-registry-mirror=https://dcyzi7af.mirror.aliyuncs.com -d virtualbox default</span><br></pre></td></tr></table></figure>
+<h1 id="我的Spring-Cloud的项目配置文件指令："><a href="#我的Spring-Cloud的项目配置文件指令：" class="headerlink" title="我的Spring Cloud的项目配置文件指令："></a>我的Spring Cloud的项目配置文件指令：</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-machine -s &quot;E:\SoftWaves\dicker&quot; create --engine-registry-mirror=https://dcyzi7af.mirror.aliyuncs.com -d virtualbox default</span><br></pre></td></tr></table></figure>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 6379:6379 redis:latest</span><br></pre></td></tr></table></figure>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --hostname navy-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3.8.8-management</span><br></pre></td></tr></table></figure>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">浏览器输入ip地址，进入rabbit管理界面： 192.168.99.100:15672</span><br></pre></td></tr></table></figure>
 <p>rabbit 账号密码： guest  guest</p>
-</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>个人错误大全和笔记</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://luoxiaohei520.github.io/posts/c0b97cce.html">https://luoxiaohei520.github.io/posts/c0b97cce.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>罗小黑🥝</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-06-21</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-04-21</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"><div class="tags-punctuation"><svg class="faa-tada icon" style="height:1.1em;width:1.1em;fill:currentColor;position:relative;top:2px;margin-right:3px" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg></div>踩坑记录</a></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂作者</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/04/13/wx.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/13/wx.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/04/13/zfb.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/13/zfb.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><audio id="coinAudio" src="https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a"></audio><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/9b1154cd.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-z8rlkw.jpg" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hexo的启动方式</div></div></a></div><div class="next-post pull-right"><a href="/posts/a378bd8e.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y81x37.jpg" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Python</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><svg class="meta_icon" style="width:22px;height:22px;position:relative;top:5px"><use xlink:href="#icon-mulu1"></use></svg><span style="font-weight:bold">目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">每天都在进步，哪怕是一点点。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Vue安装和学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE"><span class="toc-text">克隆项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-text">安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E5%8D%B8%E8%BD%BD"><span class="toc-text">Vue卸载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E5%BC%95%E5%85%A5Element-ui%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84%E8%B5%84%E6%BA%90%EF%BC%8C%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%8A%E5%BC%95%E5%85%A5js%E5%92%8Ccss%E6%96%87%E4%BB%B6%E5%8D%B3%E5%8F%AF%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8"><span class="toc-text">vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Docker安装和相关配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F"><span class="toc-text">配置镜像加速</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%95%9C%E5%83%8F"><span class="toc-text">启动安装的镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#v-mydata-mysql-log-var-log-mysql-v-mydata-mysql-data-var-lib-mysql-v-mydata-mysql-conf-etc-mysql-e-MYSQL-ROOT-PASSWORD-a-d-mysql-5-7"><span class="toc-text">-v &#x2F;mydata&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql 
--v &#x2F;mydata&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql \
--v &#x2F;mydata&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql \
--e MYSQL_ROOT_PASSWORD&#x3D;a \
--d mysql:5.7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E8%BE%B9%E6%98%AFmysql5-7%E7%9A%84%E5%90%AF%E5%8A%A8%E6%96%B9%E5%BC%8F-d-%E4%BB%A3%E8%A1%A8%E4%BB%A5%E5%90%8E%E5%8F%B0%E6%96%B9%E5%BC%8F%E8%BF%90%E8%A1%8C-p-3306-3306-%E5%B0%86%E5%AE%B9%E5%99%A8%E7%9A%843306%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E5%88%B0%E4%B8%BB%E6%9C%BA%E7%9A%843306"><span class="toc-text">上边是mysql5.7的启动方式
--d 代表以后台方式运行
--p 3306:3306 将容器的3306端口映射到主机的3306</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDredis"><span class="toc-text">下载redis</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Linux指令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">MySql相关指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81MySQL%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">1、MySQL常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E4%BF%AE%E6%94%B9mysql%E4%B8%ADroot%E7%9A%84%E5%AF%86%E7%A0%81%EF%BC%9A"><span class="toc-text">2、修改mysql中root的密码：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81grant"><span class="toc-text">3、grant</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81mysqldump"><span class="toc-text">4、mysqldump</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E5%8F%AF%E5%B0%86%E6%9F%A5%E8%AF%A2%E5%AD%98%E5%82%A8%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%AD%E5%B9%B6%E5%91%8A%E8%AF%89mysql%E4%BB%8E%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%BB%E5%8F%96%E6%9F%A5%E8%AF%A2%E8%80%8C%E4%B8%8D%E6%98%AF%E7%AD%89%E5%BE%85%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E3%80%82%E5%8F%AF%E5%88%A9%E7%94%A8%E5%A4%96%E5%A3%B3%E7%A8%8B%E5%BA%8F%E9%94%AE%E5%85%A5%E9%87%8D%E5%AE%9A%E5%90%91%E5%AE%9E%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%99%E9%A1%B9%E5%B7%A5%E4%BD%9C%E3%80%82"><span class="toc-text">5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AEMYSQL"><span class="toc-text">一 . 安装与配置MYSQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%B8%B8%E7%94%A8mysql%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%91%BD%E4%BB%A4"><span class="toc-text">二 . 常用mysql命令行命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E3%80%82-MySql%E4%B8%AD%E7%9A%84SQL%E8%AF%AD%E5%8F%A5"><span class="toc-text">三 。 MySql中的SQL语句</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">我的Spring Cloud的项目配置文件指令：</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬</p><div class="bg-ad"><div>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://stellarium.org/">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/posts/eec9786.html">魔改指南</a><a href="/box/nav/">网址导航</a></li><li><a href="/social/link/">我的朋友</a><a href="/comments/">留点什么</a></li><li><a href="/personal/about/">关于作者</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.fomal.cc/" title="Fomalhaut🥝"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2023</b></span><span><b>&nbsp;&nbsp;By 罗小黑🥝</b></span></div><div class="footer_custom_text">我希望你能每一天都过得快乐，并且每一天都有收获！！！</div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://bitiful.dogecast.com/buckets" style="margin-inline:5px" title="本网站经Service Worker分流至缤纷云对象存储"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Bucket-缤纷云-9c62da.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netdun.net/" style="margin-inline:5px" title="本站使用网盾星球提供CDN加速与防护"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/CDN-网盾星球-fff2cc.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>云服务器部署的踩坑和前端vue的学习和安装</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://luoxiaohei520.github.io/posts/c0b97cce.html">https://luoxiaohei520.github.io/posts/c0b97cce.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>罗小黑🥝</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-06-21</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-06-25</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"><div class="tags-punctuation"><svg class="faa-tada icon" style="height:1.1em;width:1.1em;fill:currentColor;position:relative;top:2px;margin-right:3px" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg></div>踩坑记录</a></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂作者</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/04/13/wx.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/13/wx.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/04/13/zfb.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/13/zfb.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><audio id="coinAudio" src="https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a"></audio><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/9b1154cd.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqw9yx.jpg" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hexo的启动方式</div></div></a></div><div class="next-post pull-right"><a href="/posts/a378bd8e.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqw9yx.jpg" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Python</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><svg class="meta_icon" style="width:22px;height:22px;position:relative;top:5px"><use xlink:href="#icon-mulu1"></use></svg><span style="font-weight:bold">目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AF%8F%E5%A4%A9%E9%83%BD%E5%9C%A8%E8%BF%9B%E6%AD%A5%EF%BC%8C%E5%93%AA%E6%80%95%E6%98%AF%E4%B8%80%E7%82%B9%E7%82%B9%E3%80%82"><span class="toc-text">每天都在进步，哪怕是一点点。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue%E5%AE%89%E8%A3%85%E5%92%8C%E5%AD%A6%E4%B9%A0"><span class="toc-text">Vue安装和学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%8B%E9%9A%86%E9%A1%B9%E7%9B%AE"><span class="toc-text">克隆项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-text">安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E5%8D%B8%E8%BD%BD"><span class="toc-text">Vue卸载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E5%BC%95%E5%85%A5Element-ui%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84%E8%B5%84%E6%BA%90%EF%BC%8C%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%8A%E5%BC%95%E5%85%A5js%E5%92%8Ccss%E6%96%87%E4%BB%B6%E5%8D%B3%E5%8F%AF%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8"><span class="toc-text">vue引入Element-ui获取最新版本的资源，在页面上引入js和css文件即可开始使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker%E5%AE%89%E8%A3%85%E5%92%8C%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE"><span class="toc-text">Docker安装和相关配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F"><span class="toc-text">配置镜像加速</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%95%9C%E5%83%8F"><span class="toc-text">启动安装的镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d-mysql-5-7"><span class="toc-text">  -d mysql:5.7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#p-3306-3306-%E5%B0%86%E5%AE%B9%E5%99%A8%E7%9A%843306%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E5%88%B0%E4%B8%BB%E6%9C%BA%E7%9A%843306"><span class="toc-text">-p 3306:3306 将容器的3306端口映射到主机的3306</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDredis"><span class="toc-text">下载redis</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E6%8C%87%E4%BB%A4"><span class="toc-text">Linux指令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MySql%E7%9B%B8%E5%85%B3%E6%8C%87%E4%BB%A4"><span class="toc-text">MySql相关指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81MySQL%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">1、MySQL常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E4%BF%AE%E6%94%B9mysql%E4%B8%ADroot%E7%9A%84%E5%AF%86%E7%A0%81%EF%BC%9A"><span class="toc-text">2、修改mysql中root的密码：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81grant"><span class="toc-text">3、grant</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81mysqldump"><span class="toc-text">4、mysqldump</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E5%8F%AF%E5%B0%86%E6%9F%A5%E8%AF%A2%E5%AD%98%E5%82%A8%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E4%B8%AD%E5%B9%B6%E5%91%8A%E8%AF%89mysql%E4%BB%8E%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%BB%E5%8F%96%E6%9F%A5%E8%AF%A2%E8%80%8C%E4%B8%8D%E6%98%AF%E7%AD%89%E5%BE%85%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5%E3%80%82%E5%8F%AF%E5%88%A9%E7%94%A8%E5%A4%96%E5%A3%B3%E7%A8%8B%E5%BA%8F%E9%94%AE%E5%85%A5%E9%87%8D%E5%AE%9A%E5%90%91%E5%AE%9E%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%9D%A5%E5%AE%8C%E6%88%90%E8%BF%99%E9%A1%B9%E5%B7%A5%E4%BD%9C%E3%80%82"><span class="toc-text">5、可将查询存储在一个文件中并告诉mysql从文件中读取查询而不是等待键盘输入。可利用外壳程序键入重定向实用程序来完成这项工作。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AEMYSQL"><span class="toc-text">一 . 安装与配置MYSQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E5%B8%B8%E7%94%A8mysql%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%91%BD%E4%BB%A4"><span class="toc-text">二 . 常用mysql命令行命令　</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E3%80%82-MySql%E4%B8%AD%E7%9A%84SQL%E8%AF%AD%E5%8F%A5"><span class="toc-text">三 。 MySql中的SQL语句</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84Spring-Cloud%E7%9A%84%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%8C%87%E4%BB%A4%EF%BC%9A"><span class="toc-text">我的Spring Cloud的项目配置文件指令：</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬</p><div class="bg-ad"><div>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://stellarium.org/">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/posts/eec9786.html">魔改指南</a><a href="/box/nav/">网址导航</a></li><li><a href="/social/link/">我的朋友</a><a href="/comments/">留点什么</a></li><li><a href="/personal/about/">关于作者</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.fomal.cc/" title="Fomalhaut🥝"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2023</b></span><span><b>&nbsp;&nbsp;By 罗小黑🥝</b></span></div><div class="footer_custom_text">我希望你能每一天都过得快乐，并且每一天都有收获！！！</div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://bitiful.dogecast.com/buckets" style="margin-inline:5px" title="本网站经Service Worker分流至缤纷云对象存储"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Bucket-缤纷云-9c62da.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netdun.net/" style="margin-inline:5px" title="本站使用网盾星球提供CDN加速与防护"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/CDN-网盾星球-fff2cc.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
@@ -1200,7 +1055,7 @@ document.addEventListener('pjax:error', (e) => {
     <style></style><script data-pjax>
   function butterfly_swiper_injector_config(){
     var parent_div_git = document.getElementById('recent-posts');
-    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/ac133265.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y81x37.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-23</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/ac133265.html&quot;);" href="javascript:void(0);" alt="">线程池学习</a><div class="blog-slider__text">🥧本文将重点从线程池进行讲解，以及如何实现线程池，并且线程池的实现方式，以及线程池的一些相关问题的讲解</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/ac133265.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/b7fb4495.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/11/wallhaven-x8gpeo.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/b7fb4495.html&quot;);" href="javascript:void(0);" alt="">音乐</a><div class="blog-slider__text">🥧想要听歌吗?,本页面将集成部分在线音乐供你倾听。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/b7fb4495.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/ece28c36.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-z8ldwj.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-27</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/ece28c36.html&quot;);" href="javascript:void(0);" alt="">二十三种设计模式</a><div class="blog-slider__text">我其实很多时候都想放弃这23种鬼东西，看着头疼，二十三种设计模式，那是真的头疼，不仅仅要了解原图还要了解相关代码，但是这东西又贼重要，没办法，我只能搞了，毕竟软考确实蛮重要的，并且这23种模式也确实很重要。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/ece28c36.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/42904f32.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/11/wallhaven-x8gpeo.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/42904f32.html&quot;);" href="javascript:void(0);" alt="">java多线程面试题</a><div class="blog-slider__text">🥧本文主要介绍对多线程面试题的总结</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/42904f32.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/a378bd8e.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y81x37.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-10</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/a378bd8e.html&quot;);" href="javascript:void(0);" alt="">Python</a><div class="blog-slider__text">没想到吧，我居然还会花点时间来学Python,作为一种脚本语言，Python确实简单易学，但是作为一个学过java的学生，我还是花点时间学习了解一下Python，看着好多老师和架构师都学习Python，我也入坑一下，看看Python如何，希望不要像java那么卷才对呀，反正工作也没代码给看，管理也和我说了让我准备准备找找下家，我也知道了，我应该要溜了，他应该不会给我代码看了。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/a378bd8e.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-z86kmy.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-22</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">Markdown语法与外挂标签写法汇总</a><div class="blog-slider__text">🥧本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/135de23b.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-z86kmy.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-20</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/135de23b.html&quot;);" href="javascript:void(0);" alt="">牛客刷题笔记1</a><div class="blog-slider__text">本文来自笔者牛客刷题的笔记，以及错误的记录</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/135de23b.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/f7912a82.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-x8gpeo.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/f7912a82.html&quot;);" href="javascript:void(0);" alt="">力扣刷题</a><div class="blog-slider__text">快毕业了，发现自己写代码的能力还是不是很强，CV工程师倒是玩得挺6，但是自己去解决对字符的处理，对数组的处理，对文件的处理，发现自己真的太逊了，早知如此何必当初呢？没办法，东西还是得学，选择了这条路，总不能不走吧，不过说真的，到时候该转行还是得转行，但是现在该学学还是学学。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/f7912a82.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/afe2faba.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-z8rlkw.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-24</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/afe2faba.html&quot;);" href="javascript:void(0);" alt="">Mybatis框架学习</a><div class="blog-slider__text">本文将从0到1搭建Mybatis项目，并实现使用mybatis完成简单的对数据库的增删改查操作</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/afe2faba.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/fd5ae9cb.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y8o2xg.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/fd5ae9cb.html&quot;);" href="javascript:void(0);" alt="">IDEA全家桶激活激活码</a><div class="blog-slider__text">本文将重点介绍IDEA全家桶激活方式和相关的全家桶激活码，本系列全部使用的是2022.1月份的激活码</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/fd5ae9cb.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/ac133265.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y897wd.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-23</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/ac133265.html&quot;);" href="javascript:void(0);" alt="">线程池学习</a><div class="blog-slider__text">🥧本文将重点从线程池进行讲解，以及如何实现线程池，并且线程池的实现方式，以及线程池的一些相关问题的讲解</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/ac133265.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/b7fb4495.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y8o2xg.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/b7fb4495.html&quot;);" href="javascript:void(0);" alt="">音乐</a><div class="blog-slider__text">🥧想要听歌吗?,本页面将集成部分在线音乐供你倾听。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/b7fb4495.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/ece28c36.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqz3eq.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-27</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/ece28c36.html&quot;);" href="javascript:void(0);" alt="">二十三种设计模式</a><div class="blog-slider__text">我其实很多时候都想放弃这23种鬼东西，看着头疼，二十三种设计模式，那是真的头疼，不仅仅要了解原图还要了解相关代码，但是这东西又贼重要，没办法，我只能搞了，毕竟软考确实蛮重要的，并且这23种模式也确实很重要。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/ece28c36.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/42904f32.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-z827xy.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/42904f32.html&quot;);" href="javascript:void(0);" alt="">java多线程面试题</a><div class="blog-slider__text">🥧本文主要介绍对多线程面试题的总结</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/42904f32.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/a378bd8e.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqw9yx.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-10</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/a378bd8e.html&quot;);" href="javascript:void(0);" alt="">Python</a><div class="blog-slider__text">没想到吧，我居然还会花点时间来学Python,作为一种脚本语言，Python确实简单易学，但是作为一个学过java的学生，我还是花点时间学习了解一下Python，看着好多老师和架构师都学习Python，我也入坑一下，看看Python如何，希望不要像java那么卷才对呀，反正工作也没代码给看，管理也和我说了让我准备准备找找下家，我也知道了，我应该要溜了，他应该不会给我代码看了。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/a378bd8e.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqw9yx.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-22</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">Markdown语法与外挂标签写法汇总</a><div class="blog-slider__text">🥧本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/135de23b.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/11/wallhaven-x8gpeo.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-20</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/135de23b.html&quot;);" href="javascript:void(0);" alt="">牛客刷题笔记1</a><div class="blog-slider__text">本文来自笔者牛客刷题的笔记，以及错误的记录</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/135de23b.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/f7912a82.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-y86377.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/f7912a82.html&quot;);" href="javascript:void(0);" alt="">力扣刷题</a><div class="blog-slider__text">快毕业了，发现自己写代码的能力还是不是很强，CV工程师倒是玩得挺6，但是自己去解决对字符的处理，对数组的处理，对文件的处理，发现自己真的太逊了，早知如此何必当初呢？没办法，东西还是得学，选择了这条路，总不能不走吧，不过说真的，到时候该转行还是得转行，但是现在该学学还是学学。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/f7912a82.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/afe2faba.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-wqz3eq.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-24</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/afe2faba.html&quot;);" href="javascript:void(0);" alt="">Mybatis框架学习</a><div class="blog-slider__text">本文将从0到1搭建Mybatis项目，并实现使用mybatis完成简单的对数据库的增删改查操作</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/afe2faba.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/fd5ae9cb.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/04/20/wallhaven-x8gpeo.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/fd5ae9cb.html&quot;);" href="javascript:void(0);" alt="">IDEA全家桶激活激活码</a><div class="blog-slider__text">本文将重点介绍IDEA全家桶激活方式和相关的全家桶激活码，本系列全部使用的是2022.1月份的激活码</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/fd5ae9cb.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
     console.log('已挂载butterfly_swiper')
     parent_div_git.insertAdjacentHTML("afterbegin",item_html)
     }
@@ -1252,7 +1107,19 @@ document.addEventListener('pjax:error', (e) => {
   else if (epage === cpage){
     butterfly_clock_anzhiyu_injector_config();
   }
-  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("python-github-calendar-api-sand.vercel.app/api?luoxiaohei520",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'luoxiaohei520')
+    }
+  </script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
 for(var i = 0;i<arr.length;i++){
     arr[i].classList.add('wow');
     arr[i].classList.add('animate__rubberBand');
@@ -1268,16 +1135,4 @@ for(var i = 0;i<arr.length;i++){
     arr[i].setAttribute('data-wow-delay', '200ms');
     arr[i].setAttribute('data-wow-offset', '30');
     arr[i].setAttribute('data-wow-iteration', '1');
-  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
-  function gitcalendar_injector_config(){
-      var parent_div_git = document.getElementById('gitZone');
-      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
-      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
-      console.log('已挂载gitcalendar')
-      }
-
-    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
-        gitcalendar_injector_config()
-        GitCalendarInit("python-github-calendar-api-sand.vercel.app/api?luoxiaohei520",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'luoxiaohei520')
-    }
-  </script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":120,"height":240},"mobile":{"show":false},"log":false});</script></body></html>
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":120,"height":240},"mobile":{"show":false},"log":false});</script></body></html>
