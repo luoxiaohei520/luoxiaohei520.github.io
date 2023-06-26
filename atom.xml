@@ -6,7 +6,7 @@
   <link href="https://luoxiaohei520.github.io/atom.xml" rel="self"/>
   
   <link href="https://luoxiaohei520.github.io/"/>
-  <updated>2023-04-20T06:27:57.715Z</updated>
+  <updated>2023-06-26T11:56:26.141Z</updated>
   <id>https://luoxiaohei520.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MongoDB搭建和简单的使用</title>
+    <link href="https://luoxiaohei520.github.io/posts/e79f2a83.html"/>
+    <id>https://luoxiaohei520.github.io/posts/e79f2a83.html</id>
+    <published>2023-06-26T10:19:03.000Z</published>
+    <updated>2023-06-26T11:56:26.141Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MongoDB的部署和搭建"><a href="#MongoDB的部署和搭建" class="headerlink" title="MongoDB的部署和搭建"></a>MongoDB的部署和搭建</h1><p>怎么说呢，实在是太坑了。直接在虚拟机上部署，出现各种问题，迫不得已，我只能采取另一种方式来解决问题，毕竟程序员只要程序和人有一个能够跑就行了，哈哈哈哈哈。</p><p>废话不说了，直接使用docker来安装MongoDB</p><p>记得这个是安装了相关依赖和docker之后才能进行的操作，以下是安装最新的版本。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --restart=always -p 27019:27017 --name mymongo -v /home/mongodb:/data/db -d mongo</span><br></pre></td></tr></table></figure><h1 id="MongoDB简单的增查操作"><a href="#MongoDB简单的增查操作" class="headerlink" title="MongoDB简单的增查操作"></a>MongoDB简单的增查操作</h1><p>好了，第一步完成了，那么第二部，直接从docker镜像中查看安装的MongoDB， </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure><p>找到MongoDB的容器id</p><p>之后进行：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 容器id mongo admin</span><br></pre></td></tr></table></figure><p>实际上这个时候就已经进入到MongoDB里边了。</p><p>我们继续添加用户：</p><p>以下是对容器进行管理员添加</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(&#123; user: &#x27;root&#x27;, pwd: &#x27;123456&#x27;, roles: [ &#123; role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; &#125; ] &#125;);</span><br></pre></td></tr></table></figure><p>如果他显示</p><blockquote><p>Successfully added user: {<br>        “user” : “root”,<br>        “roles” : [<br>                {<br>                        “role” : “userAdminAnyDatabase”,<br>                        “db” : “admin”<br>                }<br>        ]<br>}</p></blockquote><p>代表添加成功了</p><p>接下来我们对添加的用户进行测试一下哈</p><p>语法是：db.auth(“用户名”，“密码”)</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.auth(&quot;root&quot;,&quot;123456&quot;)</span><br></pre></td></tr></table></figure><blockquote><p>db.auth(“root”,”root”)  密码错误<br>Error: Authentication failed.<br>0<br>db.auth(“root”,”123456”) 密码正确<br>1</p></blockquote><p>以上是添加管理员和管理员登录的操作，接下来我们进行用户数据添加操作。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(&#123; user: &#x27;xh&#x27;, pwd: &#x27;123456&#x27;, roles: [ &#123; role: &quot;readWrite&quot;, db: &quot;xh&quot; &#125; ] &#125;);</span><br></pre></td></tr></table></figure><blockquote><p>这里我们对整条语句进行分析：</p><p>db  代表MongoDB的语法操作</p><p>createUser代表创建用户数据，可以是普通用户也可以是管理员，其主要区别在于后边的roles的操作，实际上是对权限的管控。</p><p>roles ：给创建的用户分配权限</p><p>db：数据库名，和第一个db有区别</p></blockquote><p>使用我们创建的数据库 : 语法use 数据库名</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use test</span><br></pre></td></tr></table></figure><p><strong>添加数据到数据库表：</strong></p><p>语法：db.表名.save({列名：”数据”})；</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.test.save(&#123;name:&quot;张三&quot;&#125;)</span><br></pre></td></tr></table></figure><p>既然添加数据了，那么就要查询数据了：</p><p><strong>查询数据</strong>:语法查询MongoDB的所有数据：db.表名.find()</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.test.find()</span><br></pre></td></tr></table></figure><p>具体语法请查看：<a href="https://blog.csdn.net/weixin_36810906/article/details/110792096">https://blog.csdn.net/weixin_36810906/article/details/110792096</a></p>]]></content>
+    
+    
+    <summary type="html">部署到云服务上的MongoDB部署和搭建，怎么说呢，直接在Linux上安装MongoDB实在太麻烦了，后边转念一想，何不使用docker呢</summary>
+    
+    
+    
+    <category term="操作" scheme="https://luoxiaohei520.github.io/categories/%E6%93%8D%E4%BD%9C/"/>
+    
+    
+    <category term="操作" scheme="https://luoxiaohei520.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>pdf阅读器</title>
@@ -342,9 +363,9 @@
     <category term="操作" scheme="https://luoxiaohei520.github.io/categories/%E6%93%8D%E4%BD%9C/"/>
     
     
-    <category term="Git" scheme="https://luoxiaohei520.github.io/tags/Git/"/>
-    
     <category term="操作" scheme="https://luoxiaohei520.github.io/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+    <category term="Git" scheme="https://luoxiaohei520.github.io/tags/Git/"/>
     
   </entry>
   
@@ -437,27 +458,6 @@
     <category term="Markdown" scheme="https://luoxiaohei520.github.io/tags/Markdown/"/>
     
     <category term="外挂标签" scheme="https://luoxiaohei520.github.io/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>牛客刷题笔记1</title>
-    <link href="https://luoxiaohei520.github.io/posts/135de23b.html"/>
-    <id>https://luoxiaohei520.github.io/posts/135de23b.html</id>
-    <published>2023-04-20T10:19:03.000Z</published>
-    <updated>2023-04-20T18:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="笔试题和算法题1"><a href="#笔试题和算法题1" class="headerlink" title="笔试题和算法题1"></a>笔试题和算法题1</h2><ol><li>HashMap如何解决哈希冲突？</li></ol><p><a href="https://blog.csdn.net/qq_41167306/article/details/123610211">HashMap是由数组+链表组成的，jdk1.8后加入了红黑树。它使用链地址法来解决哈希冲突，这样我们可以将具有相同哈希值的对象组织成一个链表放在hash值所对应的bucket下</a></p><ol><li>java中数组复制效率对比</li></ol><p>在Java语言中，有几种数组复制方法，包括System.arraycopy、clone、Arrays.copyOf和for循环。其中，System.arraycopy的效率最高，其次是clone，然后是Arrays.copyOf，最后是for循环。</p><ol><li>java中二维数组创建的正确语句</li></ol><p>float f <code>[][]</code> = new float<code>[6][6]</code></p><p>float  <code>[]f[]</code> = new float<code>[6][6]</code></p><p>float  <code>[][]f</code> = new float<code>[6][6]</code></p><p>float  <code>[][]f</code> = new float<code>[6][]</code></p><ol><li>如何保证在多线程环境下保证线程顺序执行又保证线程安全</li></ol><p>在多线程环境下，可以使用多种方法来保证线程顺序执行并保证线程安全。例如，可以使用Thread类中的<code>join</code>方法来保证多个线程按指定的顺序执行。此外，还可以使用CountDownLatch、CyclicBarrier、Semaphore等并发工具类来实现线程的同步和顺序执行。</p><ol><li><p>join方法：join方法是Thread类中的一个方法，它可以让当前线程等待调用join方法的线程执行完成后再继续执行。例如，如果线程A调用了线程B的join方法，那么线程A会等待线程B执行完成后再继续执行。</p></li><li><p>CountDownLatch：CountDownLatch是一个并发工具类，它允许一个或多个线程等待其他线程完成操作。它的构造函数接受一个int类型的参数，表示需要等待的线程数量。当一个线程完成操作时，它可以调用CountDownLatch的countDown方法来减少计数器的值。其他线程可以调用CountDownLatch的await方法来等待计数器减为0。</p></li><li><p>CyclicBarrier：CyclicBarrier也是一个并发工具类，它允许一组线程互相等待，直到所有线程都到达某个屏障点。它的构造函数接受一个int类型的参数，表示需要等待的线程数量。当一个线程到达屏障点时，它会调用CyclicBarrier的await方法来等待其他线程。当所有线程都到达屏障点时，屏障将打开，所有线程都将继续执行。</p></li><li><p>Semaphore：Semaphore是一个计数信号量，它可以用来控制对共享资源的访问。它的构造函数接受一个int类型的参数，表示允许同时访问共享资源的最大线程数量。当一个线程需要访问共享资源时，它可以调用Semaphore的acquire方法来获取许可。如果当前没有可用的许可，那么该线程将阻塞，直到有可用的许可为止。当一个线程完成对共享资源的访问后，它可以调用Semaphore的release方法来释放许可。</p></li></ol><p>这些方法都可以用来保证多个线程按指定顺序执行并保证线程安全。</p><ol><li>针对jdk1.7,不属于JVM堆内存中的区域，</li></ol><p>java7，字符串常量池从方法区移到堆中。java8 整个常量池从方法区中移除。方法区使用元空间（MetaSpace）实现 。</p><ol><li><p>关于jvm的一些看法,,</p><ol><li>JVM大体分为堆、栈、方法区和程序计数器四个部分。其中堆和方法区对线程共享，栈和程序计数器对线程隔离。</li><li>堆：存放数组和对象实例 ,- 栈：存放局部变量和数据类型 ,- 方法区：存放静态变量、常量、类信息和代码,,程序计数器是一个比较小的内存区域，用于指示当前线程所执行的字节码执行 到了第几行，是线程隔离的 ,原则上讲，所有的对象都是在堆区上分配内存，是线程之间共享的 , Java方法执行内存模型，用于存储局部变量，操作数栈，动态链接，方法出口等信息，是线程隔离的 ,</li></ol></li><li><p>TreeSet使用二叉树对元素进行排序 </p></li><li><p>读写锁的一些知识：</p></li></ol><p>CopyOnWriteArrayList适用于写少读多的并发场景 ，ReadWriteLock即为读写锁，他要求写与写之间互斥，读与写之间互斥，    读与读之间可以并发执行。在读多写少的情况下可以提高效率 ，ConcurrentHashMap是同步的HashMap，读写都加锁，volatile只保证多线程操作的可见性，不保证原子性</p><ol><li>Servlet中HttpServletRequest.getParameter获取的参数</li></ol><p>由客户端浏览器和web容器配置共同决定编码。</p><ol><li><p>成员内部类前面可以修饰public,protected,private.</p></li><li><p>在接口interface主体内声明常量的<code>public static int answer = 42;</code></p></li><li><p>在java7中能做switch()参数的类型：</p><ol><li>int 型</li><li>枚举类型</li><li>字符串类型(String ) jdk7以后新增</li><li>short</li><li>char</li><li>long </li></ol><p>不能作为switch的类型：</p><ol><li>float</li><li>double</li><li>boolean</li></ol></li><li><p>jre判断程序是否执行结束的标准：</p><p>所有前台线程执行完毕</p><p>后台线程：指为其他线程提供服务的线程，也称为守护线程。JVM的垃圾回收线程就是一个后台线程。 前台线程：是指接受后台线程服务的线程，其实前台后台线程是联系在一起，就像傀儡和幕后操纵者一样的关系。傀儡是前台线程、幕后操纵者是后台线程。由前台线程创建的线程默认也是前台线程。可以通过isDaemon()和setDaemon()方法来判断和设置一个线程是否为后台线程。 </p></li><li><pre><code class="lang-java">//以下代码输出什么  nullpublic class Base&#123;    private String baseName = &quot;base&quot;;    public Base()&#123;        callName();    &#125;    public void callName()&#123;        System. out. println(baseName);    &#125;    static class Sub extends Base&#123;        private String baseName = &quot;sub&quot;;        public void callName()&#123;            System. out. println (baseName) ;        &#125;    &#125;    public static void main(String[] args)&#123;        Base b = new Sub();    &#125;&#125;</code></pre></li></ol><p>(1) <strong>父类静态代码块</strong>(包括静态初始化块，静态属性，但不包括静态方法) </p><p>(2) <strong>子类静态代码块</strong>(包括静态初始化块，静态属性，但不包括静态方法   ) </p><p>(3) <strong>父类非静态代码块</strong>(   包括非静态初始化块，非静态属性   ) </p><p>(4) <strong>父类构造函数</strong> </p><p>(5) <strong>子类非静态代码块</strong>   (   包括非静态初始化块，非静态属性   ) </p><p>(6) <strong>子类构造函数</strong> </p><p>​    其中：类中静态块按照声明顺序执行，并且(1)和(2)不需要调用new类实例的时候就执行了(意思就是在类加载到方法区的时候执行的) </p><p>   2.其次，需要理解子类覆盖父类方法的问题，也就是<strong>方法重写实现多态</strong>问题。 </p><p>​    Base b = new Sub();<strong>它为多态的一种表现形式，声明是Base,实现是Sub类，</strong>   <strong>理解为</strong>       <strong>b</strong>     <strong>编译时表现为Base类特性，运行时表现为Sub类特性。</strong>    </p><p>​    当子类覆盖了父类的方法后，意思是父类的方法已经被重写，<strong>题中</strong>     <strong>父类初始化调用的方法为子类实现的方法，子类实现的方法中调用的baseName为子类中的私有属性。</strong>    </p><p>​    由1.可知，此时只执行到步骤4.,子类非静态代码块和初始化步骤还没有到，子类中的baseName还没有被初始化。所以此时   baseName为空。   所以为null。</p>]]></content>
-    
-    
-    <summary type="html">本文来自笔者牛客刷题的笔记，以及错误的记录</summary>
-    
-    
-    
-    <category term="刷题笔记和记录" scheme="https://luoxiaohei520.github.io/categories/%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E5%92%8C%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="刷题" scheme="https://luoxiaohei520.github.io/tags/%E5%88%B7%E9%A2%98/"/>
     
   </entry>
   

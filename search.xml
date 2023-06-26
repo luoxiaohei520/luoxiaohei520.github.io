@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MongoDB搭建和简单的使用</title>
+      <link href="/posts/e79f2a83.html"/>
+      <url>/posts/e79f2a83.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="MongoDB的部署和搭建"><a href="#MongoDB的部署和搭建" class="headerlink" title="MongoDB的部署和搭建"></a>MongoDB的部署和搭建</h1><p>怎么说呢，实在是太坑了。直接在虚拟机上部署，出现各种问题，迫不得已，我只能采取另一种方式来解决问题，毕竟程序员只要程序和人有一个能够跑就行了，哈哈哈哈哈。</p><p>废话不说了，直接使用docker来安装MongoDB</p><p>记得这个是安装了相关依赖和docker之后才能进行的操作，以下是安装最新的版本。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --restart=always -p 27019:27017 --name mymongo -v /home/mongodb:/data/db -d mongo</span><br></pre></td></tr></table></figure><h1 id="MongoDB简单的增查操作"><a href="#MongoDB简单的增查操作" class="headerlink" title="MongoDB简单的增查操作"></a>MongoDB简单的增查操作</h1><p>好了，第一步完成了，那么第二部，直接从docker镜像中查看安装的MongoDB， </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure><p>找到MongoDB的容器id</p><p>之后进行：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 容器id mongo admin</span><br></pre></td></tr></table></figure><p>实际上这个时候就已经进入到MongoDB里边了。</p><p>我们继续添加用户：</p><p>以下是对容器进行管理员添加</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(&#123; user: &#x27;root&#x27;, pwd: &#x27;123456&#x27;, roles: [ &#123; role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; &#125; ] &#125;);</span><br></pre></td></tr></table></figure><p>如果他显示</p><blockquote><p>Successfully added user: {<br>        “user” : “root”,<br>        “roles” : [<br>                {<br>                        “role” : “userAdminAnyDatabase”,<br>                        “db” : “admin”<br>                }<br>        ]<br>}</p></blockquote><p>代表添加成功了</p><p>接下来我们对添加的用户进行测试一下哈</p><p>语法是：db.auth(“用户名”，“密码”)</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.auth(&quot;root&quot;,&quot;123456&quot;)</span><br></pre></td></tr></table></figure><blockquote><p>db.auth(“root”,”root”)  密码错误<br>Error: Authentication failed.<br>0<br>db.auth(“root”,”123456”) 密码正确<br>1</p></blockquote><p>以上是添加管理员和管理员登录的操作，接下来我们进行用户数据添加操作。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.createUser(&#123; user: &#x27;xh&#x27;, pwd: &#x27;123456&#x27;, roles: [ &#123; role: &quot;readWrite&quot;, db: &quot;xh&quot; &#125; ] &#125;);</span><br></pre></td></tr></table></figure><blockquote><p>这里我们对整条语句进行分析：</p><p>db  代表MongoDB的语法操作</p><p>createUser代表创建用户数据，可以是普通用户也可以是管理员，其主要区别在于后边的roles的操作，实际上是对权限的管控。</p><p>roles ：给创建的用户分配权限</p><p>db：数据库名，和第一个db有区别</p></blockquote><p>使用我们创建的数据库 : 语法use 数据库名</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use test</span><br></pre></td></tr></table></figure><p><strong>添加数据到数据库表：</strong></p><p>语法：db.表名.save({列名：”数据”})；</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.test.save(&#123;name:&quot;张三&quot;&#125;)</span><br></pre></td></tr></table></figure><p>既然添加数据了，那么就要查询数据了：</p><p><strong>查询数据</strong>:语法查询MongoDB的所有数据：db.表名.find()</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.test.find()</span><br></pre></td></tr></table></figure><p>具体语法请查看：<a href="https://blog.csdn.net/weixin_36810906/article/details/110792096">https://blog.csdn.net/weixin_36810906/article/details/110792096</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 操作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pdf阅读器</title>
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
@@ -374,9 +399,9 @@
       
         <tags>
             
-            <tag> Git </tag>
-            
             <tag> 操作 </tag>
+            
+            <tag> Git </tag>
             
         </tags>
       
