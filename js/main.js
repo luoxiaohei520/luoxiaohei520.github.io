@@ -73,7 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const isHighlightShrink = GLOBAL_CONFIG_SITE.isHighlightShrink
     const highlightHeightLimit = highLight.highlightHeightLimit
     const isShowTool = isHighlightCopy || isHighlightLang || isHighlightShrink !== undefined
-    const $figureHighlight = highLight.plugin === 'highlighjs' ? document.querySelectorAll('figure.highlight') : document.querySelectorAll('pre[class*="language-"]')
+    let $figureHighlight = highLight.plugin === 'highlighjs' ? document.querySelectorAll('figure.highlight') : document.querySelectorAll('pre[class*="language-"]')
+
+    if (!$figureHighlight.length) {
+      $figureHighlight = document.querySelectorAll('#article-container pre.highlight, #article-container figure.highlight, #article-container div.highlight')
+    }
 
     if (!((isShowTool || highlightHeightLimit) && $figureHighlight.length)) return
 
@@ -117,8 +121,12 @@ document.addEventListener('DOMContentLoaded', function () {
       $buttonParent.classList.add('copy-true')
       const selection = window.getSelection()
       const range = document.createRange()
-      if (isPrismjs) range.selectNodeContents($buttonParent.querySelectorAll('pre code')[0])
-      else range.selectNodeContents($buttonParent.querySelectorAll('table .code pre')[0])
+      if (isPrismjs) {
+        range.selectNodeContents($buttonParent.querySelectorAll('pre code')[0])
+      } else {
+        const codeEl = $buttonParent.querySelector('table .code pre') || $buttonParent.querySelector('pre code') || $buttonParent.querySelector('code')
+        if (codeEl) range.selectNodeContents(codeEl)
+      }
       selection.removeAllRanges()
       selection.addRange(range)
       const text = selection.toString()
@@ -166,11 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fragment.appendChild(ele)
       }
 
-      if (service === 'hl') {
-        item.insertBefore(fragment, item.firstChild)
-      } else {
-        item.parentNode.insertBefore(fragment, item)
-      }
+      item.insertBefore(fragment, item.firstChild)
     }
 
     if (isHighlightLang) {
@@ -178,26 +182,42 @@ document.addEventListener('DOMContentLoaded', function () {
         $figureHighlight.forEach(function (item) {
           const langName = item.getAttribute('data-language') ? item.getAttribute('data-language') : 'Code'
           const highlightLangEle = `<div class="code-lang">${langName}</div>`
-          btf.wrap(item, 'figure', { class: 'highlight' })
+          if (item.tagName.toLowerCase() !== 'figure') {
+            btf.wrap(item, 'figure', { class: 'highlight' })
+            item = item.parentNode
+          }
           createEle(highlightLangEle, item)
         })
       } else {
         $figureHighlight.forEach(function (item) {
-          let langName = item.getAttribute('class').split(' ')[1]
+          const classStr = item.getAttribute('class') || ''
+          const langMatch = classStr.match(/(?:language-|lang-)(\w+)/)
+          let langName = langMatch ? langMatch[1] : classStr.split(' ')[1]
           if (langName === 'plain' || langName === undefined) langName = 'Code'
           const highlightLangEle = `<div class="code-lang">${langName}</div>`
-          createEle(highlightLangEle, item, 'hl')
+          if (item.tagName.toLowerCase() !== 'figure') {
+            btf.wrap(item, 'figure', { class: 'highlight' })
+            item = item.parentNode
+          }
+          createEle(highlightLangEle, item)
         })
       }
     } else {
       if (isPrismjs) {
         $figureHighlight.forEach(function (item) {
-          btf.wrap(item, 'figure', { class: 'highlight' })
+          if (item.tagName.toLowerCase() !== 'figure') {
+            btf.wrap(item, 'figure', { class: 'highlight' })
+            item = item.parentNode
+          }
           createEle('', item)
         })
       } else {
         $figureHighlight.forEach(function (item) {
-          createEle('', item, 'hl')
+          if (item.tagName.toLowerCase() !== 'figure') {
+            btf.wrap(item, 'figure', { class: 'highlight' })
+            item = item.parentNode
+          }
+          createEle('', item)
         })
       }
     }
