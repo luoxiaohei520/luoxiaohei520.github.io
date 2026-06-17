@@ -7771,6 +7771,7 @@ input#pic-link {
   background: url(https://tuchuang.voooe.cn/images/2023/11/09/myLogo.png)
     no-repeat center center;
   background-size: cover;
+  display: none;
 }
 
 /* heo 夜间模式加载背景色 */
